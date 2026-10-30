@@ -56,6 +56,11 @@ label{display:block;font-size:13px;color:#c7d0e8;margin:13px 0 6px}input,textare
 #authModal .modal{max-height:calc(100vh - 36px);overflow-y:auto}
 .attendance-heads{margin-top:18px;padding-top:16px;border-top:1px solid #29435f}
 .attendance-heads .actions{margin-top:10px}
+/* Session 2 refresh: Midnight Black, Electric Cobalt Blue, and Acid Lime */
+:root{--bg:#030407;--panel:#0b0d12;--panel2:#101722;--text:#f8faff;--muted:#b7c0cc;--purple:#1558c9;--cyan:#d4ff24;--green:#d4ff24;--red:#ff7088;--gold:#d4ff24}
+body{background:radial-gradient(ellipse at top,#1558c9 0,#030407 56%)}
+button{background:linear-gradient(110deg,#1558c9,#0d3f9a)}
+button.secondary{background:#111a28;border:1px solid #1558c9}.card,.modal{border-color:#1d427d}.eyebrow,.rank-score{color:#d4ff24}.gradient{background:linear-gradient(90deg,#fff,#d4ff24,#78aaff);-webkit-background-clip:text;background-clip:text;color:transparent}.notice{background:#111b1f;border-color:#d4ff24;color:#efffc0}.option.selected{border-color:#d4ff24;background:#17221a}.option:hover{border-color:#d4ff24}.progress div{background:linear-gradient(90deg,#1558c9,#d4ff24)}
 </style>
 </head>
 <body>
@@ -177,7 +182,7 @@ function sessionWindow(now=new Date()){const start=new Date(now);start.setHours(
 function sundayKey(date=new Date()){return sessionWindow(date).start.toISOString().slice(0,10)}
 function attendanceData(){try{return JSON.parse(localStorage.getItem(ATTENDANCE_KEY))||{}}catch{return{}}}
 function saveAttendance(data){localStorage.setItem(ATTENDANCE_KEY,JSON.stringify(data))}
-function getAttendanceCode(){return localStorage.getItem(ATTENDANCE_CODE_KEY)||'IEEE2026'}
+function getAttendanceCode(){return localStorage.getItem(ATTENDANCE_CODE_KEY)||'IEEE2562'}
 const MANUAL_ATTENDANCE_KEY='ieeeRobotics.manualAttendance.v1';
 function manualAttendance(){try{return JSON.parse(localStorage.getItem(MANUAL_ATTENDANCE_KEY))||null}catch{return null}}
 function attendanceAccess(now=new Date()){const manual=manualAttendance();if(manual&&manual.date===now.toISOString().slice(0,10))return{open:manual.open,manual:true,changedAt:manual.changedAt};const w=sessionWindow(now);return{open:now>=w.start&&now<=w.end,manual:false,start:w.start,end:w.end}}
@@ -278,6 +283,34 @@ $('unlockAttendanceControls').onclick=()=>{if($('attendanceHeadsPass').value==='
 const openAttendanceFromHeads=document.createElement('button');openAttendanceFromHeads.id='openAttendanceFromHeads';openAttendanceFromHeads.className='secondary';openAttendanceFromHeads.textContent='Open Attendance';$('saveAttendanceCode').parentElement.append(openAttendanceFromHeads);openAttendanceFromHeads.onclick=()=>showTab('attendance');
 $('teacherWorkspace').insertAdjacentHTML('afterbegin','<div class="actions" style="margin-bottom:14px"><button id="openTeacherAttendance">📅 Open Attendance Panel</button></div>');$('openTeacherAttendance').onclick=()=>showTeacherPanel('attendance');
 const manualControls=document.createElement('div');manualControls.className='actions';manualControls.style.margin='14px 0';manualControls.innerHTML='<button id="openAttendanceNow">Open attendance now</button><button id="closeAttendanceNow" class="secondary">Close attendance</button>';$('saveAttendanceCode').parentElement.after(manualControls);$('openAttendanceNow').onclick=()=>{setManualAttendance(true);$('attendanceCodeMsg').textContent='Attendance is open now. Students can enter the code at this time.';$('attendanceCodeMsg').classList.remove('hidden')};$('closeAttendanceNow').onclick=()=>{setManualAttendance(false);$('attendanceCodeMsg').textContent='Attendance is closed. The check-in timer is stopped.';$('attendanceCodeMsg').classList.remove('hidden')};
+
+/* ===== Session 2, free courses, and Quiz 3 ===== */
+function addSession2Resources(){
+  const sessions=$('powerpoint');
+  sessions.insertAdjacentHTML('beforeend',`<div class="card presentation-hero" style="margin-top:16px"><div class="ppt-icon" aria-hidden="true">2</div><div class="presentation-copy"><div class="eyebrow">SESSION 2</div><h2>Sensors with Arduino</h2><p class="muted">Explore sensor types, how sensors work, and practical Arduino applications. Both presentation formats are available below.</p><div class="file-meta"><span>PowerPoint (.pptx)</span><span>PDF</span><span>39 slides</span></div><div class="actions"><a href="assets/IEEE-Sensors-Session-2.pptx" download><button type="button">Download PowerPoint</button></a><a href="assets/IEEE-Sensors-Session-2.pdf" target="_blank" rel="noopener"><button type="button" class="secondary">Open PDF</button></a><a href="assets/IEEE-Sensors-Session-2.pdf" download><button type="button" class="ghost">Download PDF</button></a></div></div></div>`);
+  const courses=`<section id="courses" class="tabpage hidden"><div class="card presentation-hero"><div class="ppt-icon" aria-hidden="true">↗</div><div class="presentation-copy"><div class="eyebrow">FREE LEARNING</div><h2>Free Courses</h2><p class="muted">Open the free course collection for additional learning resources.</p><div class="actions"><a href="https://lnkd.in/p/eEHm54Jn" target="_blank" rel="noopener"><button type="button">Open free courses</button></a></div></div></div></section>`;
+  $('apps').insertAdjacentHTML('beforebegin',courses);
+  document.querySelector('.tabs').insertAdjacentHTML('beforeend','<button class="tab" data-tab="courses">🎓 Free Courses</button>');
+  $('menuPanel').insertAdjacentHTML('beforeend','<button data-menu-tab="courses">🎓 Free Courses</button>');
+  document.querySelector('[data-tab="courses"]').onclick=()=>showTab('courses');
+  document.querySelector('[data-menu-tab="courses"]').onclick=()=>{showTab('courses');$('menuPanel').classList.add('hidden')};
+  $('teacherAttendanceCode').placeholder='e.g. IEEE2562';
+  $('quizzes').insertAdjacentHTML('beforeend','<div class="card presentation-hero" style="margin-top:16px"><div class="ppt-icon" aria-hidden="true">3</div><div class="presentation-copy"><div class="eyebrow">IEEE ROBOTICS</div><h2>Quiz 3: 10 Sensors with Arduino</h2><p class="muted">Test your understanding of common Arduino sensors, their signals, and safe connections.</p><div class="actions"><button class="quiz-choice" data-quiz-index="2">Open Quiz 3<span class="small">Go to Player Login</span></button></div></div></div>');
+}
+addSession2Resources();
+quizCatalog.push({title:'IEEE Robotics - Quiz 3: 10 Sensors with Arduino',code:'IEEE30',time:30,questions:[
+{q:'Which sensor measures distance by sending an ultrasonic pulse?',opts:['HC-SR04','LDR','DHT11','Potentiometer'],correct:0,explain:'The HC-SR04 measures distance from the echo time of an ultrasonic pulse.'},
+{q:'Which Arduino pin type reads the changing voltage from an LDR circuit?',opts:['Analog input','Digital output','PWM output','Ground'],correct:0,explain:'An LDR voltage divider gives a changing analog voltage.'},
+{q:'Which sensor commonly measures temperature and humidity together?',opts:['DHT11 or DHT22','HC-SR04','PIR','IR obstacle sensor'],correct:0,explain:'DHT sensors provide temperature and humidity readings.'},
+{q:'What does a PIR sensor detect?',opts:['Motion from changing infrared energy','Air pressure','Sound frequency','Water level only'],correct:0,explain:'A PIR sensor responds to changes in infrared radiation, often from people moving.'},
+{q:'What is the usual purpose of a potentiometer in an Arduino project?',opts:['Provide an adjustable analog voltage','Measure distance with sound','Switch mains voltage','Store program code'],correct:0,explain:'Turning a potentiometer changes the voltage at its wiper.'},
+{q:'Which connection is required between Arduino and an external sensor supply?',opts:['A shared ground','A second USB cable','A motor driver','A pull-up on every pin'],correct:0,explain:'A shared ground gives both circuits the same voltage reference.'},
+{q:'What does the Echo pin on an HC-SR04 provide?',opts:['A pulse whose duration represents distance','A fixed 5 V supply','A PWM motor signal','A temperature value'],correct:0,explain:'Arduino measures the Echo pulse length to calculate distance.'},
+{q:'Which sensor is best for detecting ambient light level?',opts:['LDR','PIR','Ultrasonic sensor','Push button'],correct:0,explain:'An LDR changes resistance according to light level.'},
+{q:'Why should an Arduino input not receive more than its rated voltage?',opts:['It can damage the input pin','It makes the code run faster','It improves sensor range','It charges the board'],correct:0,explain:'Overvoltage can permanently damage a microcontroller input.'},
+{q:'What does an IR obstacle sensor typically report after adjustment?',opts:['Whether a nearby object is detected','Exact room humidity','Battery capacity','Servo angle'],correct:0,explain:'Common IR obstacle modules provide a digital object-detected signal.'}
+]});
+document.querySelectorAll('[data-quiz-index]').forEach(b=>b.addEventListener('click',()=>{const selectedQuiz=structuredClone(quizCatalog[Number(b.dataset.quizIndex)]);setQuiz(selectedQuiz);$('roomCode').value=selectedQuiz.code;leave();showTab('play')}));
 
 /* ===== Init ===== */
 setQuiz(quiz);updateProfileGreeting();renderAssignment();showTab('info');renderAttendance();setInterval(renderAttendance,1000);
