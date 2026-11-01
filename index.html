@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -301,7 +302,10 @@ $('saveProfileBtn').onclick=()=>{const id=$('authId').value.trim(),name=$('authN
 $('homeBtn').onclick=()=>showTab('info');
  
 /* ===== Attendance (timer ON: Sunday 3:30-5:30 PM, Heads can open/close manually) ===== */
-function sessionWindow(now=new Date()){const start=new Date(now);start.setHours(15,30,0,0);if(now.getDay()!==0)start.setDate(start.getDate()+(7-now.getDay()));const end=new Date(start);end.setHours(17,30,0,0);return{start,end}}
+/* One-off schedule: on these dates the check-in window is different (local time). Every other week uses Sunday 3:30-5:30 PM. */
+const SPECIAL_ATTENDANCE_DAYS={'2026-11-01':{from:[22,0],to:[24,0]}};
+function localDateKey(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
+function sessionWindow(now=new Date()){const sp=SPECIAL_ATTENDANCE_DAYS[localDateKey(now)];if(sp){const a=new Date(now);a.setHours(sp.from[0],sp.from[1],0,0);const e=new Date(now);e.setHours(sp.to[0],sp.to[1],0,0);return{start:a,end:e}}const start=new Date(now);start.setHours(15,30,0,0);if(now.getDay()!==0)start.setDate(start.getDate()+(7-now.getDay()));const end=new Date(start);end.setHours(17,30,0,0);return{start,end}}
 function sundayKey(date=new Date()){return sessionWindow(date).start.toISOString().slice(0,10)}
 function attendanceData(){try{return JSON.parse(localStorage.getItem(ATTENDANCE_KEY))||{}}catch{return{}}}
 function saveAttendance(data){localStorage.setItem(ATTENDANCE_KEY,JSON.stringify(data))}
