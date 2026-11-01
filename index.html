@@ -3,58 +3,58 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>IEEE ROBOTICS</title>
-<link rel="icon" type="image/svg+xml" href="assets/ieee-logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet"><link rel="icon" type="image/svg+xml" href="assets/ieee-logo.svg">
 <style>
-:root{--bg:#0b1020;--panel:#131b31;--panel2:#1a2541;--text:#f5f7ff;--muted:#aab5d1;--purple:#8b5cf6;--cyan:#22d3ee;--green:#34d399;--red:#fb7185;--gold:#fbbf24}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#202653 0,#0b1020 58%);color:var(--text);font:16px/1.45 system-ui,-apple-system,Segoe UI,sans-serif;min-height:100vh}
-button,input,textarea,select{font:inherit}button{cursor:pointer;border:0;border-radius:12px;padding:12px 16px;font-weight:750;background:linear-gradient(110deg,var(--purple),#6d5dfc);color:white;box-shadow:0 5px 18px #0003}button.secondary{background:#263250;box-shadow:none}button.ghost{background:transparent;border:1px solid #3a4665;box-shadow:none}button:disabled{opacity:.45;cursor:not-allowed}
+:root{--bg:#060d0c;--panel:#111a29;--panel2:#172236;--text:#fffcf5;--muted:#ccd5e0;--purple:#175ed1;--cyan:#e2ff26;--green:#34d399;--red:#fb7185;--gold:#e2ff26}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#1d2c45 0,#060d0c 58%);color:var(--text);font:16px/1.45 system-ui,-apple-system,Segoe UI,sans-serif;min-height:100vh}
+button,input,textarea,select{font:inherit}button{cursor:pointer;border:0;border-radius:12px;padding:12px 16px;font-weight:750;background:linear-gradient(110deg,var(--purple),#175fd4);color:white;box-shadow:0 5px 18px #0003}button.secondary{background:#1d2b44;box-shadow:none}button.ghost{background:transparent;border:1px solid #2e4a7a;box-shadow:none}button:disabled{opacity:.45;cursor:not-allowed}
 header{max-width:1120px;margin:auto;padding:22px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{display:flex;align-items:center;gap:12px;font-weight:900;font-size:20px}.logo{width:48px;height:42px;border-radius:10px;display:grid;place-items:center;background:#fff;border:1px solid #dbeafe;overflow:hidden}.ieee-mark{width:44px;height:38px;display:block}
-.pill{font-size:12px;border:1px solid #384465;border-radius:999px;padding:6px 10px;color:var(--muted)}
-main{max-width:1120px;margin:auto;padding:12px 20px 60px}.hero{padding:30px 0 26px;max-width:760px}.eyebrow{color:var(--cyan);font-size:12px;letter-spacing:2px;font-weight:900;text-transform:uppercase}.hero h1{font-size:clamp(36px,6vw,64px);line-height:1.02;margin:12px 0}.gradient{background:linear-gradient(90deg,#fff,#bba5ff,#68e6f4);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{color:var(--muted);max-width:600px;font-size:18px}
-.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 20px}.tab{background:#141d34;border:1px solid #293552;box-shadow:none;color:#c7d0e8;transition:transform .2s ease,background .2s ease,border-color .2s ease,color .2s ease,box-shadow .2s ease}.tab:hover{background:#1269c7;border-color:#57b4ff;color:#fff;transform:translateY(-2px);box-shadow:0 8px 22px #0a75d544}.tab.active{background:#f3f1ff;color:#24154c;border-color:#f3f1ff}
-.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px}.card{background:linear-gradient(145deg,#17213b,#11182b);border:1px solid #2a3655;border-radius:20px;padding:22px;box-shadow:0 15px 45px #0002;min-width:0}.span8{grid-column:span 8}.span7{grid-column:span 7}.span5{grid-column:span 5}.span4{grid-column:span 4}.span12{grid-column:span 12}
-h2{font-size:22px;margin:0 0 6px}h3{margin:0 0 10px}.muted{color:var(--muted)}.small{font-size:13px}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:10px;margin-top:18px}.stat{background:#0c1326;border:1px solid #273451;border-radius:14px;padding:14px}.stat strong{display:block;font-size:25px}.stat span{color:var(--muted);font-size:12px}
-label{display:block;font-size:13px;color:#c7d0e8;margin:13px 0 6px}input,textarea,select{width:100%;background:#0b1225;color:white;border:1px solid #354362;border-radius:11px;padding:12px;outline:none}textarea{min-height:80px;resize:vertical}input:focus,textarea:focus,select:focus{border-color:var(--cyan)}.row{display:flex;gap:10px;align-items:center}.row>*{flex:1;min-width:0}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
-.rank{display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid #2a3650}.rank:last-child{border:0}.medal{width:34px;height:34px;display:grid;place-items:center;background:#263250;border-radius:11px;font-weight:900}.rank-name{flex:1;font-weight:750}.rank-score{font-weight:900;color:var(--cyan)}.rank-sub{font-size:12px;color:var(--muted)}
-.option{display:block;width:100%;text-align:left;margin:9px 0;background:#202b47;border:1px solid #354362;box-shadow:none;padding:15px;border-radius:13px;color:white}.option:hover{border-color:#a78bfa}.option.selected{border-color:var(--cyan);background:#17384a}.option.correct{border-color:var(--green);background:#123b36}.option.wrong{border-color:var(--red);background:#451f32}
-.progress{height:7px;background:#26314d;border-radius:99px;overflow:hidden;margin:14px 0}.progress div{height:100%;background:linear-gradient(90deg,var(--purple),var(--cyan));width:0;transition:width .2s}
-.notice{padding:12px 14px;background:#102d3b;border:1px solid #236078;border-radius:12px;color:#c5f7ff;margin-top:12px}.hidden{display:none!important}.qnum{color:var(--cyan);font-size:13px;font-weight:900}.footer{text-align:center;color:#8290b3;font-size:12px;padding:24px}
+.pill{font-size:12px;border:1px solid #2e4a7a;border-radius:999px;padding:6px 10px;color:var(--muted)}
+main{max-width:1120px;margin:auto;padding:12px 20px 60px}.hero{padding:30px 0 26px;max-width:760px}.eyebrow{color:var(--cyan);font-size:12px;letter-spacing:2px;font-weight:900;text-transform:uppercase}.hero h1{font-size:clamp(36px,6vw,64px);line-height:1.02;margin:12px 0}.gradient{background:linear-gradient(90deg,#fff,#9ec3ff,#e2ff26);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{color:var(--muted);max-width:600px;font-size:18px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 20px}.tab{background:#121c2c;border:1px solid #1e2c46;box-shadow:none;color:#e3edfa;transition:transform .2s ease,background .2s ease,border-color .2s ease,color .2s ease,box-shadow .2s ease}.tab:hover{background:#bdd520;border-color:#e2ff26;color:#fff;transform:translateY(-2px);box-shadow:0 8px 22px #cbe52244}.tab.active{background:#fff5f1;color:#1a273e;border-color:#fff5f1}
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px}.card{background:linear-gradient(145deg,#151f31,#0f1724);border:1px solid #1e2e48;border-radius:20px;padding:22px;box-shadow:0 15px 45px #0002;min-width:0}.span8{grid-column:span 8}.span7{grid-column:span 7}.span5{grid-column:span 5}.span4{grid-column:span 4}.span12{grid-column:span 12}
+h2{font-size:22px;margin:0 0 6px}h3{margin:0 0 10px}.muted{color:var(--muted)}.small{font-size:13px}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:10px;margin-top:18px}.stat{background:#070f0e;border:1px solid #1d2c45;border-radius:14px;padding:14px}.stat strong{display:block;font-size:25px}.stat span{color:var(--muted);font-size:12px}
+label{display:block;font-size:13px;color:#e3edfa;margin:13px 0 6px}input,textarea,select{width:100%;background:#070e0d;color:white;border:1px solid #2e4978;border-radius:11px;padding:12px;outline:none}textarea{min-height:80px;resize:vertical}input:focus,textarea:focus,select:focus{border-color:var(--cyan)}.row{display:flex;gap:10px;align-items:center}.row>*{flex:1;min-width:0}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.rank{display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid #1d2b44}.rank:last-child{border:0}.medal{width:34px;height:34px;display:grid;place-items:center;background:#1d2b44;border-radius:11px;font-weight:900}.rank-name{flex:1;font-weight:750}.rank-score{font-weight:900;color:var(--cyan)}.rank-sub{font-size:12px;color:var(--muted)}
+.option{display:block;width:100%;text-align:left;margin:9px 0;background:#19263c;border:1px solid #2e4978;box-shadow:none;padding:15px;border-radius:13px;color:white}.option:hover{border-color:#9ec3ff}.option.selected{border-color:var(--cyan);background:#1a263d}.option.correct{border-color:var(--green);background:#123b36}.option.wrong{border-color:var(--red);background:#451f32}
+.progress{height:7px;background:#1c2942;border-radius:99px;overflow:hidden;margin:14px 0}.progress div{height:100%;background:linear-gradient(90deg,var(--purple),var(--cyan));width:0;transition:width .2s}
+.notice{padding:12px 14px;background:#141e2f;border:1px solid #738213;border-radius:12px;color:#e8f2ff;margin-top:12px}.hidden{display:none!important}.qnum{color:var(--cyan);font-size:13px;font-weight:900}.footer{text-align:center;color:#afb7c0;font-size:12px;padding:24px}
 /* Interactive circuit game + 3D hardware viewer */
-.hardware-stage{perspective:1100px;overflow:auto;padding:24px 12px 34px;background:radial-gradient(ellipse at center,#1b2b43,#0a1020 72%);border:1px solid #2a3655;border-radius:18px;min-height:310px}
+.hardware-stage{perspective:1100px;overflow:auto;padding:24px 12px 34px;background:radial-gradient(ellipse at center,#182338,#060d0c 72%);border:1px solid #1e2e48;border-radius:18px;min-height:310px}
 .hardware-row{display:flex;align-items:center;justify-content:center;gap:34px;min-width:720px;transform:rotateX(8deg);transform-style:preserve-3d;padding:10px 10px 24px}
 .arduino3d{position:relative;width:300px;height:190px;flex-shrink:0;border:3px solid #17634e;border-radius:15px;background:linear-gradient(135deg,#16805d,#07503e 70%,#064431);box-shadow:0 15px 0 #052e27,0 24px 28px #0008;transform:rotateY(-8deg) rotateX(3deg);padding:15px;color:#d9fff0}
-.arduino3d:before{content:'UNO';position:absolute;left:82px;top:55px;width:118px;height:72px;border-radius:7px;background:linear-gradient(135deg,#242b35,#11151c);border:2px solid #58616b;display:grid;place-items:center;font-size:23px;font-weight:900;color:#dbe5ee;box-shadow:4px 5px 0 #032d23}
-.usb3d{position:absolute;left:-20px;top:63px;width:32px;height:55px;background:linear-gradient(90deg,#8c9aa6,#e5ebf0,#778795);border-radius:5px;box-shadow:0 4px 0 #39444d}
-.power3d{position:absolute;left:-14px;top:133px;width:27px;height:29px;background:#111820;border:2px solid #8c969f;border-radius:5px}
+.arduino3d:before{content:'UNO';position:absolute;left:82px;top:55px;width:118px;height:72px;border-radius:7px;background:linear-gradient(135deg,#141e2f,#060c0b);border:2px solid #58616b;display:grid;place-items:center;font-size:23px;font-weight:900;color:#e9e5e0;box-shadow:4px 5px 0 #032d23}
+.usb3d{position:absolute;left:-20px;top:63px;width:32px;height:55px;background:linear-gradient(90deg,#a9b0ba,#edebe8,#35558c);border-radius:5px;box-shadow:0 4px 0 #1d2c45}
+.power3d{position:absolute;left:-14px;top:133px;width:27px;height:29px;background:#070d0c;border:2px solid #8c969f;border-radius:5px}
 .board-label{position:absolute;font-size:10px;font-weight:900;letter-spacing:.3px;color:#d8fff1}
 .pinrail{position:absolute;left:15px;right:15px;display:flex;justify-content:space-between;gap:2px}
 .pinrail.top{top:-17px}.pinrail.bottom{bottom:-17px}
-.pin{display:flex;flex-direction:column;align-items:center;gap:3px;font-size:9px;font-weight:900;color:#e5f5ff;white-space:nowrap}
-.pin-dot{width:9px;height:9px;border-radius:2px;background:#d7dce2;border:1px solid #68717a;box-shadow:0 2px 0 #444;display:block}
-.pin.terminal{cursor:pointer}.pin.terminal .pin-dot{width:13px;height:13px;background:#f8c84b;border:2px solid #fff0a6}.pin.terminal:hover .pin-dot,.pin.terminal.active .pin-dot{background:#22d3ee;transform:scale(1.25)}
-.breadboard3d{width:330px;height:190px;flex-shrink:0;position:relative;border-radius:10px;background:linear-gradient(145deg,#f8fafc,#d7dde5);box-shadow:0 14px 0 #a6afbb,0 24px 28px #0008;transform:rotateY(8deg) rotateX(3deg);padding:18px 16px;color:#253046;border:1px solid #fff}
+.pin{display:flex;flex-direction:column;align-items:center;gap:3px;font-size:9px;font-weight:900;color:#e8f2ff;white-space:nowrap}
+.pin-dot{width:9px;height:9px;border-radius:2px;background:#dfddda;border:1px solid #68717a;box-shadow:0 2px 0 #444;display:block}
+.pin.terminal{cursor:pointer}.pin.terminal .pin-dot{width:13px;height:13px;background:#e2ff26;border:2px solid #e6ff8a}.pin.terminal:hover .pin-dot,.pin.terminal.active .pin-dot{background:#e2ff26;transform:scale(1.25)}
+.breadboard3d{width:330px;height:190px;flex-shrink:0;position:relative;border-radius:10px;background:linear-gradient(145deg,#fbfaf9,#e2dfdb);box-shadow:0 14px 0 #bdc5d0,0 24px 28px #0008;transform:rotateY(8deg) rotateX(3deg);padding:18px 16px;color:#19263c;border:1px solid #fff}
 .bread-holes{display:grid;grid-template-columns:repeat(15,1fr);gap:4px 5px;position:relative;z-index:1}
 .hole{height:6px;width:6px;border-radius:50%;background:#606c79;box-shadow:inset 1px 1px 2px #111;justify-self:center}
-.bread-center{height:18px;border-top:2px solid #bbc4ce;border-bottom:2px solid #bbc4ce;margin:10px 0;background:#cbd3dd}
+.bread-center{height:18px;border-top:2px solid #c9c5c0;border-bottom:2px solid #c9c5c0;margin:10px 0;background:#d8d5d0}
 .power-rails{height:7px;border-radius:4px;margin-bottom:8px;background:#e34b59;position:relative}.power-rails.blue{background:#4187dc;margin-top:8px;margin-bottom:0}
 .bread-label{position:absolute;font-size:9px;font-weight:900;color:#dc3545;left:7px;top:3px}.bread-label.blue{color:#2563b8;top:auto;bottom:3px}
 .hardware-caption{font-size:12px;color:var(--muted);text-align:center;margin-top:10px}
-.game-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.7fr);gap:16px}.component-tray{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.terminal-chip{padding:9px 11px;background:#202b47;border:1px solid #3a496a;border-radius:10px;color:#f8fafc;font-size:13px;cursor:pointer}.terminal-chip.active{border-color:var(--cyan);background:#123d4a}.terminal-chip.done{border-color:var(--green);background:#123a34}.wire-list{display:flex;flex-direction:column;gap:8px;margin:12px 0}.wire-item{padding:10px 12px;border-radius:10px;background:#0b1427;border:1px solid #2d3b59;font-size:13px}.wire-item.done{border-color:#238a70;color:#a7f3d0}.led-glow{width:42px;height:42px;border-radius:50%;background:#263142;border:4px solid #758195;margin:12px auto;box-shadow:inset 0 0 8px #000}.led-glow.on{background:#ff3d64;box-shadow:0 0 12px #ff3d64,0 0 34px #ff3d64,inset 0 0 8px #fff}.codebox{background:#080d18;color:#b4f5d0;padding:14px;border-radius:12px;font:13px/1.6 ui-monospace,monospace;white-space:pre-wrap;overflow:auto}
+.game-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.7fr);gap:16px}.component-tray{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.terminal-chip{padding:9px 11px;background:#19263c;border:1px solid #304d7f;border-radius:10px;color:#fbfaf9;font-size:13px;cursor:pointer}.terminal-chip.active{border-color:var(--cyan);background:#19263c}.terminal-chip.done{border-color:var(--green);background:#123a34}.wire-list{display:flex;flex-direction:column;gap:8px;margin:12px 0}.wire-item{padding:10px 12px;border-radius:10px;background:#070f0e;border:1px solid #29426c;font-size:13px}.wire-item.done{border-color:#238a70;color:#a7f3d0}.led-glow{width:42px;height:42px;border-radius:50%;background:#182439;border:4px solid #35558c;margin:12px auto;box-shadow:inset 0 0 8px #000}.led-glow.on{background:#ff3d64;box-shadow:0 0 12px #ff3d64,0 0 34px #ff3d64,inset 0 0 8px #fff}.codebox{background:#050909;color:#b4f5d0;padding:14px;border-radius:12px;font:13px/1.6 ui-monospace,monospace;white-space:pre-wrap;overflow:auto}
 @media(max-width:760px){.game-layout{grid-template-columns:1fr}.hardware-stage{min-height:280px}}
 @media(max-width:760px){.span8,.span7,.span5,.span4{grid-column:span 12}.hero{padding-top:16px}.stats{grid-template-columns:repeat(3,1fr)}header{align-items:flex-start}.pill{display:none}.card{padding:18px}}
-.parts-grid{display:flex;flex-direction:column;gap:10px;margin-top:20px}.parts-grid .part-card{width:100%;min-height:0;grid-column:auto;padding:14px 18px}.part-card{position:relative;overflow:hidden;background:linear-gradient(145deg,#17284a,#101a30);transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}.part-card:before{content:'';position:absolute;inset:0 0 auto;height:4px;background:linear-gradient(90deg,#22d3ee,#8b5cf6);opacity:.8}.part-card:hover{transform:translateY(-2px);border-color:#3999e5;box-shadow:0 12px 24px #0004}.part-label{display:flex;align-items:flex-start;gap:12px;cursor:pointer}.part-label input{width:20px;height:20px;min-width:20px;margin-top:2px;accent-color:#22d3ee}.part-label span{display:block}.part-desc{display:block;margin-top:5px}.part-status{display:inline-block;margin-top:10px;padding:4px 9px;border-radius:999px;background:#0a1326;border:1px solid #2d4165;font-size:12px;color:#aab5d1}.part-card:has(.part-check:checked){border-color:#34d399;background:linear-gradient(145deg,#143c42,#112a35)}.part-card:has(.part-check:checked) .part-status{color:#a7f3d0;border-color:#238a70}
-.presentation-hero{min-height:280px;display:flex;align-items:center;gap:28px;background:linear-gradient(135deg,#182a50,#26174c 55%,#112945)}.ppt-icon{width:112px;height:112px;display:grid;place-items:center;flex:0 0 auto;border-radius:24px;background:linear-gradient(145deg,#f35b3e,#b92a1e);box-shadow:0 18px 35px #0005;font-size:54px;font-weight:900;color:#fff}.presentation-copy{max-width:650px}.presentation-copy h2{font-size:clamp(28px,4vw,42px)}.file-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.file-meta span{border:1px solid #4a5b80;border-radius:999px;padding:5px 10px;color:#c8d6f4;font-size:12px}@media(max-width:600px){.presentation-hero{align-items:flex-start;gap:18px}.ppt-icon{width:76px;height:76px;border-radius:18px;font-size:38px}}
-.login-card{background:linear-gradient(135deg,#182a50,#26174c 55%,#112945);border-color:#526a9c}.quiz-choice{width:100%;text-align:left}.quiz-choice .small{display:block;margin-top:5px;font-weight:500;color:#d8e1f7}
-.info-list{display:grid;gap:10px;margin:18px 0}.info-list div{padding:12px 14px;border-left:3px solid var(--cyan);background:#0d1730;border-radius:0 10px 10px 0;color:#cbd7f1}.game-library{margin:18px 0}.game-card{cursor:pointer;text-align:left;width:100%;min-height:158px;background:linear-gradient(145deg,#17284a,#101a30);transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}.game-card:hover,.game-card.active{transform:translateY(-4px);border-color:#2ea8ff;box-shadow:0 16px 30px #0004}.game-card strong{color:#e8f4ff;font-size:17px}.game-card .small{display:block;margin-top:8px;color:#aab5d1}.game-brief{border-color:#2c77ad;background:linear-gradient(135deg,#152949,#11223c)}.game-brief h3{font-size:24px}.game-detail{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:16px}.game-detail div{padding:12px;border-radius:12px;background:#0b162b;border:1px solid #29425f}.game-detail strong{display:block;margin-bottom:5px;color:#69d9ff}@media(max-width:650px){.game-detail{grid-template-columns:1fr}}
-.game-play{margin-top:16px;border-color:#3287c6;background:radial-gradient(ellipse at top,#193a59,#0b1428 70%)}.game-play h3{font-size:22px}.game-controls{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}.game-controls label{flex:1;min-width:145px}.game-controls input{margin-top:5px}.game-result{min-height:46px;margin-top:14px}.snake-canvas{display:block;max-width:100%;margin:14px auto;border:2px solid #24c8e6;border-radius:12px;background:#07111e;image-rendering:pixelated}.choice-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.choice-row button{background:#1f3b5c}.choice-row button:hover{background:#147bc4}
-.joystick{position:relative;width:142px;height:142px;border:2px solid #38bdf8;border-radius:50%;margin:14px auto;background:#0c2035}.joy{position:absolute;width:47px;height:47px;padding:0;border-radius:50%;display:grid;place-items:center;background:#1269c7}.joy.up{top:5px;left:46px}.joy.down{bottom:5px;left:46px}.joy.left{left:5px;top:46px}.joy.right{right:5px;top:46px}.maze-canvas{display:block;width:min(100%,620px);height:auto;margin:14px auto;border:2px solid #17c4eb;border-radius:12px;background:#050a15;image-rendering:pixelated}.answer-box{min-height:88px}
+.parts-grid{display:flex;flex-direction:column;gap:10px;margin-top:20px}.parts-grid .part-card{width:100%;min-height:0;grid-column:auto;padding:14px 18px}.part-card{position:relative;overflow:hidden;background:linear-gradient(145deg,#1a263d,#111928);transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}.part-card:before{content:'';position:absolute;inset:0 0 auto;height:4px;background:linear-gradient(90deg,#e2ff26,#175ed1);opacity:.8}.part-card:hover{transform:translateY(-2px);border-color:#dbf825;box-shadow:0 12px 24px #0004}.part-label{display:flex;align-items:flex-start;gap:12px;cursor:pointer}.part-label input{width:20px;height:20px;min-width:20px;margin-top:2px;accent-color:#e2ff26}.part-label span{display:block}.part-desc{display:block;margin-top:5px}.part-status{display:inline-block;margin-top:10px;padding:4px 9px;border-radius:999px;background:#070e0d;border:1px solid #2e4a7a;font-size:12px;color:#ccd5e0}.part-card:has(.part-check:checked){border-color:#34d399;background:linear-gradient(145deg,#172236,#121c2c)}.part-card:has(.part-check:checked) .part-status{color:#a7f3d0;border-color:#238a70}
+.presentation-hero{min-height:280px;display:flex;align-items:center;gap:28px;background:linear-gradient(135deg,#1c2942,#1a273e 55%,#182338)}.ppt-icon{width:112px;height:112px;display:grid;place-items:center;flex:0 0 auto;border-radius:24px;background:linear-gradient(145deg,#175dcf,#11479d);box-shadow:0 18px 35px #0005;font-size:54px;font-weight:900;color:#fff}.presentation-copy{max-width:650px}.presentation-copy h2{font-size:clamp(28px,4vw,42px)}.file-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.file-meta span{border:1px solid #35558c;border-radius:999px;padding:5px 10px;color:#e8f2ff;font-size:12px}@media(max-width:600px){.presentation-hero{align-items:flex-start;gap:18px}.ppt-icon{width:76px;height:76px;border-radius:18px;font-size:38px}}
+.login-card{background:linear-gradient(135deg,#1c2942,#1a273e 55%,#182338);border-color:#35558c}.quiz-choice{width:100%;text-align:left}.quiz-choice .small{display:block;margin-top:5px;font-weight:500;color:#e8f2ff}
+.info-list{display:grid;gap:10px;margin:18px 0}.info-list div{padding:12px 14px;border-left:3px solid var(--cyan);background:#101927;border-radius:0 10px 10px 0;color:#e8f2ff}.game-library{margin:18px 0}.game-card{cursor:pointer;text-align:left;width:100%;min-height:158px;background:linear-gradient(145deg,#1a263d,#111928);transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}.game-card:hover,.game-card.active{transform:translateY(-4px);border-color:#e2ff26;box-shadow:0 16px 30px #0004}.game-card strong{color:#e8f2ff;font-size:17px}.game-card .small{display:block;margin-top:8px;color:#ccd5e0}.game-brief{border-color:#a6bb1c;background:linear-gradient(135deg,#19263c,#141f30)}.game-brief h3{font-size:24px}.game-detail{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:16px}.game-detail div{padding:12px;border-radius:12px;background:#0f1623;border:1px solid #2b4571}.game-detail strong{display:block;margin-bottom:5px;color:#e2ff26}@media(max-width:650px){.game-detail{grid-template-columns:1fr}}
+.game-play{margin-top:16px;border-color:#bdd520;background:radial-gradient(ellipse at top,#1e2e48,#0e1420 70%)}.game-play h3{font-size:22px}.game-controls{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}.game-controls label{flex:1;min-width:145px}.game-controls input{margin-top:5px}.game-result{min-height:46px;margin-top:14px}.snake-canvas{display:block;max-width:100%;margin:14px auto;border:2px solid #dbf825;border-radius:12px;background:#060b0a;image-rendering:pixelated}.choice-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.choice-row button{background:#29426c}.choice-row button:hover{background:#bbd320}
+.joystick{position:relative;width:142px;height:142px;border:2px solid #e2ff26;border-radius:50%;margin:14px auto;background:#121b2b}.joy{position:absolute;width:47px;height:47px;padding:0;border-radius:50%;display:grid;place-items:center;background:#bdd520}.joy.up{top:5px;left:46px}.joy.down{bottom:5px;left:46px}.joy.left{left:5px;top:46px}.joy.right{right:5px;top:46px}.maze-canvas{display:block;width:min(100%,620px);height:auto;margin:14px auto;border:2px solid #e0fd26;border-radius:12px;background:#040807;image-rendering:pixelated}.answer-box{min-height:88px}
 @media(max-width:760px){body{font-size:15px}header{padding:14px 12px;gap:8px}.brand{gap:8px;font-size:17px}.logo{width:42px;height:38px}.ieee-mark{width:39px;height:34px}main{padding:6px 12px 38px}.hero{padding:18px 0 14px}.hero h1{font-size:clamp(32px,12vw,46px)}.hero p{font-size:16px}.tabs{position:relative;flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;padding:4px 1px 10px;margin:4px -2px 14px;scrollbar-width:thin}.tab{flex:0 0 auto;white-space:nowrap;padding:10px 13px}.card{border-radius:16px;padding:16px}.presentation-hero{min-height:0}.presentation-copy h2{font-size:28px}.presentation-hero .ppt-icon{width:64px;height:64px;font-size:32px;flex-basis:64px}.game-library{gap:10px}.game-library .game-card{grid-column:span 6;min-height:122px;padding:14px}.game-card strong{font-size:15px}.game-detail{gap:9px}.game-detail div{padding:10px}.stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}.stat{padding:10px}.stat strong{font-size:20px}.stat span{font-size:10px}.game-controls label{min-width:120px}.snake-canvas{width:min(100%,320px);height:auto}.hardware-stage{padding:16px 8px}.parts-grid .part-card{padding:13px 14px}.part-desc{font-size:12px}.info-list div{padding:10px 12px}}
 @media(max-width:390px){.brand{font-size:15px}.brand .small{font-size:10px}.hero h1{font-size:32px}.presentation-hero{gap:12px}.presentation-hero .ppt-icon{width:54px;height:54px;flex-basis:54px;font-size:27px}.presentation-copy h2{font-size:23px}.game-library .game-card{grid-column:span 12;min-height:0}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.game-controls label{min-width:100%}}
-.header-actions{display:flex;align-items:center;gap:9px;position:relative}.header-actions button{padding:10px 14px}.menu-panel{position:absolute;right:0;top:calc(100% + 10px);z-index:19;width:250px;padding:10px;border:1px solid #315274;border-radius:14px;background:#101a2ed9;backdrop-filter:blur(14px);box-shadow:0 16px 36px #0008}.menu-panel button{width:100%;text-align:left;background:transparent;box-shadow:none;color:#dbeafe;padding:10px 11px}.menu-panel button:hover{background:#1269c7;color:#fff}.modal-backdrop{position:fixed;inset:0;z-index:20;display:grid;place-items:center;padding:18px;background:#020617bb}.modal{width:min(440px,100%);background:#111a2e;border:1px solid #0e9cc3;border-radius:20px;padding:24px;box-shadow:0 22px 60px #0009}.modal-top{display:flex;justify-content:space-between;align-items:flex-start}.modal-close{background:transparent;color:#aab5d1;padding:0;font-size:25px;box-shadow:none}.modal-icon{display:grid;place-items:center;width:54px;height:54px;border-radius:14px;background:#0d91b6;font-size:28px;margin:0 auto 12px}.auth-message{margin-top:12px}.info-image{display:block;width:100%;border:1px solid #23486d;border-radius:16px;margin-top:18px}.attendance-status{font:700 27px ui-monospace,monospace;letter-spacing:2px;color:#22d3ee;text-align:center;padding:16px;background:#070d1d;border:1px solid #243756;border-radius:14px}.attendance-layout{max-width:620px;margin:auto}.mobile-nav{display:none}
-.part-thumb{display:none}.part-label{align-items:center}.part-label>span{flex:1}.teacher-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}.teacher-tab{background:#152442;border:1px solid #30496d;box-shadow:none}.teacher-tab.active{background:#0d84b5;border-color:#38d5f2}.teacher-panel{display:none}.teacher-panel.active{display:block}.student-table{width:100%;border-collapse:collapse;font-size:13px}.student-table th,.student-table td{padding:10px;text-align:left;border-bottom:1px solid #2a3650}.student-table th{color:#69d9ff}.upload-box{border:1px dashed #3b87bd;border-radius:14px;padding:16px;background:#0b1629}
+.header-actions{display:flex;align-items:center;gap:9px;position:relative}.header-actions button{padding:10px 14px}.menu-panel{position:absolute;right:0;top:calc(100% + 10px);z-index:19;width:250px;padding:10px;border:1px solid #335186;border-radius:14px;background:#101826d9;backdrop-filter:blur(14px);box-shadow:0 16px 36px #0008}.menu-panel button{width:100%;text-align:left;background:transparent;box-shadow:none;color:#dbeafe;padding:10px 11px}.menu-panel button:hover{background:#bdd520;color:#fff}.modal-backdrop{position:fixed;inset:0;z-index:20;display:grid;place-items:center;padding:18px;background:#040908bb}.modal{width:min(440px,100%);background:#101826;border:1px solid #b9d11f;border-radius:20px;padding:24px;box-shadow:0 22px 60px #0009}.modal-top{display:flex;justify-content:space-between;align-items:flex-start}.modal-close{background:transparent;color:#ccd5e0;padding:0;font-size:25px;box-shadow:none}.modal-icon{display:grid;place-items:center;width:54px;height:54px;border-radius:14px;background:#aec41d;font-size:28px;margin:0 auto 12px}.auth-message{margin-top:12px}.info-image{display:block;width:100%;border:1px solid #304d7f;border-radius:16px;margin-top:18px}.attendance-status{font:700 27px ui-monospace,monospace;letter-spacing:2px;color:#e2ff26;text-align:center;padding:16px;background:#060b0a;border:1px solid #1e2e48;border-radius:14px}.attendance-layout{max-width:620px;margin:auto}.mobile-nav{display:none}
+.part-thumb{display:none}.part-label{align-items:center}.part-label>span{flex:1}.teacher-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}.teacher-tab{background:#172236;border:1px solid #304d7f;box-shadow:none}.teacher-tab.active{background:#adc31d;border-color:#e2ff26}.teacher-panel{display:none}.teacher-panel.active{display:block}.student-table{width:100%;border-collapse:collapse;font-size:13px}.student-table th,.student-table td{padding:10px;text-align:left;border-bottom:1px solid #1d2b44}.student-table th{color:#e2ff26}.upload-box{border:1px dashed #b5cd1f;border-radius:14px;padding:16px;background:#0e1521}
 @media(max-width:760px){.header-actions .pill{display:none}.header-actions button{padding:9px 10px;font-size:13px}.tabs{display:flex}.mobile-nav{display:none}.menu-panel{position:fixed;left:12px;right:12px;top:70px;width:auto;max-height:calc(100vh - 90px);overflow:auto}.footer{padding-bottom:24px}.modal{padding:20px}.info-image{border-radius:12px}}
 #authModal .modal{max-height:calc(100vh - 36px);overflow-y:auto}
-.attendance-heads{margin-top:18px;padding-top:16px;border-top:1px solid #29435f}
+.attendance-heads{margin-top:18px;padding-top:16px;border-top:1px solid #2b4571}
 .attendance-heads .actions{margin-top:10px}
  
 /* ===== Motion upgrade ===== */
@@ -67,7 +67,7 @@ label{display:block;font-size:13px;color:#c7d0e8;margin:13px 0 6px}input,textare
 @keyframes sheen{from{transform:translateX(-120%)}to{transform:translateX(320%)}}
  
 body::before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.35;
- background-image:radial-gradient(circle,#22d3ee55 1.2px,transparent 1.6px),radial-gradient(circle,#8b5cf655 1.2px,transparent 1.6px);
+ background-image:radial-gradient(circle,#e2ff2655 1.2px,transparent 1.6px),radial-gradient(circle,#175ed155 1.2px,transparent 1.6px);
  background-size:60px 60px,120px 120px;background-position:0 0,30px 30px;animation:drift 24s linear infinite}
  
 .tabpage:not(.hidden){animation:pageIn .55s cubic-bezier(.2,.8,.2,1) both}
@@ -78,9 +78,9 @@ body::before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;op
 .tabpage:not(.hidden) .card:nth-child(5){animation-delay:.32s}
  
 .card{transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
-.card:hover{border-color:#4b6bb0;box-shadow:0 18px 50px #22d3ee22}
+.card:hover{border-color:#35558c;box-shadow:0 18px 50px #e2ff2622}
 button{position:relative;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease,filter .2s ease}
-button:hover:not(:disabled){transform:translateY(-2px);filter:brightness(1.12);box-shadow:0 10px 24px #8b5cf655}
+button:hover:not(:disabled){transform:translateY(-2px);filter:brightness(1.12);box-shadow:0 10px 24px #175ed155}
 button:active:not(:disabled){transform:translateY(0) scale(.97)}
 button:not(.ghost):not(.tab):not(.option)::after{content:'';position:absolute;top:0;left:0;width:40%;height:100%;background:linear-gradient(100deg,transparent,#fff4,transparent);transform:translateX(-120%)}
 button:hover:not(:disabled)::after{animation:sheen .7s ease}
@@ -93,24 +93,77 @@ button:hover:not(:disabled)::after{animation:sheen .7s ease}
 .progress div{transition:width .5s cubic-bezier(.2,.8,.2,1)}
  
 /* hero banner with illustration */
-.hero-banner{display:flex;align-items:center;gap:28px;position:relative;overflow:hidden;background:linear-gradient(135deg,#182a50,#26174c 55%,#112945)}
-.hero-banner:before{content:'';position:absolute;width:340px;height:340px;right:-80px;top:-120px;border-radius:50%;background:radial-gradient(circle,#22d3ee44,transparent 70%);animation:pulseGlow 4s ease-in-out infinite}
+.hero-banner{display:flex;align-items:center;gap:28px;position:relative;overflow:hidden;background:linear-gradient(135deg,#1c2942,#1a273e 55%,#182338)}
+.hero-banner:before{content:'';position:absolute;width:340px;height:340px;right:-80px;top:-120px;border-radius:50%;background:radial-gradient(circle,#e2ff2644,transparent 70%);animation:pulseGlow 4s ease-in-out infinite}
 .hero-banner .hero-text{flex:1;position:relative}
 .hero-banner h1{font-size:clamp(30px,5vw,50px);line-height:1.05;margin:10px 0}
 .robot-art{width:230px;flex:0 0 auto;animation:floaty 4s ease-in-out infinite;filter:drop-shadow(0 18px 24px #0007);position:relative}
 .robot-art .eye{animation:pulseGlow 2.2s ease-in-out infinite}
 @media(max-width:700px){.hero-banner{flex-direction:column-reverse;text-align:center}.robot-art{width:170px}}
+.learn-frame-wrap{margin-top:16px;border:1px solid #1e2e48;border-radius:16px;overflow:hidden;background:#e8f2ff}
+.learn-frame-wrap iframe{display:block;width:100%;height:78vh;min-height:560px;border:0}
+.learn-lessons{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:8px;margin-top:10px}
+.learn-lessons span{padding:10px 12px;border-radius:10px;background:#101927;border:1px solid #2b4571;color:#e8f2ff;font-size:13px}
+/* ===== Blue + lime theme (cobalt #155bc9, lime #d4ff26, black #030807) ===== */
+body{background:radial-gradient(ellipse at 50% -12%,#0b2c6b 0,#030807 58%) fixed!important}
+.tab.active{background:#d4ff26;color:#030807;border-color:#d4ff26}
+.tab:hover{background:#155bc9;border-color:#4f8dff;color:#fff;box-shadow:0 8px 22px #155bc955}
+.eyebrow{color:#d4ff26}
+button{background:linear-gradient(110deg,#155bc9,#2a74e6)}
+button.secondary{background:#0f1b33}
+.hero-banner .actions button:not(.secondary){background:#d4ff26;color:#030807}
+.hero-banner h1{font-weight:800;letter-spacing:-1px}
+.hero-banner .h-lime{font-family:'Playfair Display',Georgia,serif;font-style:italic;font-weight:700;color:#d4ff26;font-size:1.18em;display:inline-block;margin-right:.18em}
+.hero-banner .h-white{color:#fff}.hero-banner .h-blue{color:#5b9bff}
+/* ===== Learn Arduino ===== */
+.la-head{display:flex;gap:20px;align-items:flex-end;justify-content:space-between;flex-wrap:wrap}.la-prog{min-width:220px;flex:0 1 280px}
+.la-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:16px;margin-top:16px;align-items:start}
+.la-left,.la-right{display:grid;gap:16px;min-width:0}
+@media(max-width:940px){.la-grid{grid-template-columns:1fr}}
+.la-stage-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}.la-stage-top strong{font-size:19px}
+.la-nav{display:flex;gap:8px}.la-nav button{padding:9px 12px;border:1px solid #1d3a73}.la-nav button:disabled{opacity:.35}
+.la-stage{position:relative;perspective:1200px;overflow:hidden;border-radius:16px;background:radial-gradient(ellipse at 50% 35%,#0e2a5c 0,#050b14 72%);border:1px solid #1d3a73;cursor:grab;touch-action:none;user-select:none}
+.la-stage.drag{cursor:grabbing}
+.la-scene{position:absolute;left:50%;top:50%;width:640px;height:400px;margin:-200px 0 0 -320px;transform-style:preserve-3d;will-change:transform}
+.la-layer{position:absolute;left:0;top:0;width:640px;height:400px;overflow:visible;pointer-events:none}
+#laParts{transform:translateZ(14px)}#laWires{transform:translateZ(28px)}
+.la-hot{fill:#d4ff26;fill-opacity:0;stroke:#d4ff26;stroke-opacity:.75;stroke-dasharray:3 3;stroke-width:1.3;pointer-events:all;cursor:pointer}.la-hot:hover{fill-opacity:.22}
+.la-pin:hover{fill-opacity:.55}
+.la-tipbar{margin-top:10px;padding:10px 12px;border-radius:10px;background:#071226;border:1px solid #14305f;color:#cfe0ff;min-height:40px}
+.la-view{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:10px}.la-view button{padding:8px 12px;background:#0f1b33;border:1px solid #1d3a73;min-width:40px}.la-view .la-sound{background:#143a1a;border-color:#d4ff26;color:#d4ff26}.la-view .la-sound.off{background:#0f1b33;border-color:#1d3a73;color:#8a96b3}.la-hint{margin-left:auto}
+.la-ctls{display:grid;gap:12px;margin-top:14px}.la-ctls:empty{display:none}
+.la-ctl{display:block;font-size:13px;color:#cfe0ff;margin:0}.la-ctl b{color:#d4ff26;margin-left:6px}
+.la-ctl input[type=range]{width:100%;padding:0;border:0;background:transparent;accent-color:#d4ff26;margin-top:8px;height:22px}
+.la-hold{width:100%;padding:16px;font-size:15px;border:1px solid #1d3a73;background:#0f1b33;touch-action:none}.la-hold.on{background:#d4ff26;color:#030807}
+.la-piano{display:grid;grid-template-columns:repeat(8,1fr);gap:6px}
+.la-key{display:flex;flex-direction:column;align-items:center;gap:4px;padding:22px 0 10px;background:#e8eefc;color:#030807;border-radius:8px 8px 12px 12px;box-shadow:inset 0 -6px 0 #b9c4d8;touch-action:none}.la-key span{font-size:11px;color:#4a5568}.la-key.on{background:#d4ff26;box-shadow:inset 0 -2px 0 #9ec014;transform:translateY(2px)}
+.la-code-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}.la-code-head h3{margin:0}.la-code-actions{display:flex;gap:8px}
+.la-run{background:#d4ff26;color:#030807;min-width:86px}.la-run.running{background:#ff5a4d;color:#fff}
+.la-code{margin:0;background:#04080f;border:1px solid #14305f;border-radius:12px;padding:14px;font:12.5px/1.65 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#d7e4ff;overflow:auto;max-height:360px;white-space:pre;tab-size:2}
+.la-code .k{color:#7fb0ff}.la-code .c{color:#6c7a93;font-style:italic}.la-code .n{color:#d4ff26}.la-code .f{color:#ffd166}.la-code .s{color:#ff9fb2}
+.la-console{margin-top:12px;border:1px solid #14305f;border-radius:12px;overflow:hidden;background:#04080f}
+.la-console-head{display:flex;align-items:center;gap:8px;padding:9px 12px;background:#0a1832;font-size:13px;font-weight:700}.la-dot{width:9px;height:9px;border-radius:50%;background:#d4ff26}.la-status{margin-left:auto;font-weight:500;color:#8a96b3;font-size:12px}
+.la-lines{height:140px;overflow:auto;padding:10px 12px;font:12.5px/1.6 ui-monospace,Menlo,Consolas,monospace;color:#b9f27a}
+.la-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}.la-tab{padding:8px 13px;background:#0f1b33;border:1px solid #1d3a73;box-shadow:none}.la-tab.active{background:#155bc9;border-color:#4f8dff}
+.la-info-body p{margin:0;color:#c9d6f0}.la-table{width:100%;border-collapse:collapse;font-size:13.5px}.la-table td{padding:9px 6px;border-bottom:1px solid #14305f;vertical-align:top;color:#c9d6f0}.la-table td:first-child{width:36%;color:#d4ff26}
+.la-ex{margin:0;padding-left:20px;color:#c9d6f0}.la-ex li{margin:8px 0}
+.la-list{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:8px}
+.la-item{display:flex;gap:12px;align-items:center;width:100%;text-align:left;background:#071226;border:1px solid #14305f;padding:10px 12px;border-radius:12px;color:#e8f0ff;box-shadow:none}.la-item:hover{border-color:#4f8dff}.la-item.active{border-color:#d4ff26;background:#0c2048}
+.la-num{flex:0 0 28px;height:28px;border-radius:9px;display:grid;place-items:center;background:#155bc9;font-weight:900;font-size:12px}.la-item.done .la-num{background:#d4ff26;color:#030807}
+.la-prog .progress div{background:linear-gradient(90deg,#155bc9,#d4ff26)}
+@media(max-width:600px){.la-hint{display:none}.la-stage-top{flex-wrap:wrap}.la-piano{gap:4px}.la-key{padding:18px 0 8px}}
+ 
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
-<header><button class="brand" id="homeBtn" aria-label="Open General Info" style="background:transparent;padding:0;box-shadow:none;text-align:left"><div class="logo" aria-label="IEEE globe logo"><svg class="ieee-mark" viewBox="0 0 100 80" role="img" aria-label="IEEE globe mark"><circle cx="50" cy="40" r="32" fill="#00629B"/><ellipse cx="50" cy="40" rx="15" ry="32" fill="none" stroke="#fff" stroke-width="2"/><path d="M18 40h64M23 24h54M23 56h54" stroke="#fff" stroke-width="2" fill="none"/><text x="50" y="45" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="900" fill="#fff" letter-spacing="-1">IEEE</text></svg></div><div>IEEE <span style="color:#9e8bff">ROBOTICS</span><div class="small muted" style="font-weight:500">LEARN • BUILD • COMPETE</div></div></button><div class="header-actions"><span class="pill">IEEE • ROBOTICS • ARDUINO</span><button class="secondary" id="menuBtn">☰ Menu</button><button class="secondary" id="signInBtn">↪ Sign In</button><button id="signUpBtn">👥 Sign Up</button><div id="menuPanel" class="menu-panel hidden"><button data-menu-tab="info">⌂ General Info</button><button data-menu-tab="powerpoint">📊 Sessions</button><button data-menu-tab="attendance">📅 Attendance</button><button data-menu-tab="game">🎮 Learning Games</button><button data-menu-tab="lab">🧩 3D Arduino Lab</button><button data-menu-tab="parts">🧰 Get components</button><button data-menu-tab="projects">🛠️ Projects to make</button><button data-menu-tab="assignments">📝 Assignments</button><button data-menu-tab="apps">📥 Apps to download</button><button data-menu-tab="quizzes">📝 Quizes</button><button data-menu-tab="teacher">🛠 Heads Only</button></div></div></header>
+<header><button class="brand" id="homeBtn" aria-label="Open General Info" style="background:transparent;padding:0;box-shadow:none;text-align:left"><div class="logo" aria-label="IEEE globe logo"><svg class="ieee-mark" viewBox="0 0 100 80" role="img" aria-label="IEEE globe mark"><circle cx="50" cy="40" r="32" fill="#00629B"/><ellipse cx="50" cy="40" rx="15" ry="32" fill="none" stroke="#fff" stroke-width="2"/><path d="M18 40h64M23 24h54M23 56h54" stroke="#fff" stroke-width="2" fill="none"/><text x="50" y="45" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="900" fill="#fff" letter-spacing="-1">IEEE</text></svg></div><div>IEEE <span style="color:#9ec3ff">ROBOTICS</span><div class="small muted" style="font-weight:500">LEARN • BUILD • COMPETE</div></div></button><div class="header-actions"><span class="pill">IEEE • ROBOTICS • ARDUINO</span><button class="secondary" id="menuBtn">☰ Menu</button><button class="secondary" id="signInBtn">↪ Sign In</button><button id="signUpBtn">👥 Sign Up</button><div id="menuPanel" class="menu-panel hidden"><button data-menu-tab="info">⌂ General Info</button><button data-menu-tab="powerpoint">📊 Sessions</button><button data-menu-tab="attendance">📅 Attendance</button><button data-menu-tab="game">🎮 Learning Games</button><button data-menu-tab="lab">🧩 3D Arduino Lab</button><button data-menu-tab="parts">🧰 Get components</button><button data-menu-tab="projects">🛠️ Projects to make</button><button data-menu-tab="assignments">📝 Assignments</button><button data-menu-tab="apps">📥 Apps to download</button><button data-menu-tab="quizzes">📝 Quizes</button><button data-menu-tab="learn">🎓 Learn Arduino</button><button data-menu-tab="teacher">🛠 Heads Only</button></div></div></header>
 <div class="modal-backdrop hidden" id="authModal"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="authTitle"><div class="modal-top"><span></span><button class="modal-close" id="closeAuth" aria-label="Close">×</button></div><div class="modal-icon">👥</div><h2 id="authTitle" style="text-align:center">IEEE Member Sign-In</h2><p class="muted small" id="authSubtitle" style="text-align:center">MSA Student Portal Access</p><label for="authId">MSA University ID</label><input id="authId" placeholder="e.g. 2026/884"><label for="authName">Full Name</label><input id="authName" placeholder="e.g. Ahmed Hassan"><label for="authEmail">Email</label><input id="authEmail" type="email" placeholder="e.g. student@msa.edu.eg"><label for="authMajor">Major</label><input id="authMajor" placeholder="e.g. Mechatronics Engineering"><div class="actions"><button id="saveProfileBtn" style="width:100%">Save Profile Credentials</button></div><div id="profileHistory" class="hidden"><h3 style="margin-top:18px">Attendance history</h3><div id="profileHistoryList"></div></div><div id="authMsg" class="notice hidden auth-message"></div></div></div>
 <main>
 <div class="tabs">
-<button class="tab" data-tab="powerpoint">📊 Sessions</button><button class="tab" data-tab="attendance">📅 Attendance</button><button class="tab" data-tab="game">🎮 Learning Games</button><button class="tab" data-tab="lab">🧩 3D Arduino lab</button><button class="tab" data-tab="parts">🧰 Get components</button><button class="tab" data-tab="projects">🛠️ Projects to make</button><button class="tab" data-tab="assignments">📝 Assignments</button><button class="tab" data-tab="apps">📥 Apps to download</button><button class="tab" data-tab="quizzes">📝 Quizes</button><button class="tab" data-tab="teacher">🛠 Heads Only</button>
+<button class="tab" data-tab="powerpoint">📊 Sessions</button><button class="tab" data-tab="attendance">📅 Attendance</button><button class="tab" data-tab="game">🎮 Learning Games</button><button class="tab" data-tab="lab">🧩 3D Arduino lab</button><button class="tab" data-tab="parts">🧰 Get components</button><button class="tab" data-tab="projects">🛠️ Projects to make</button><button class="tab" data-tab="assignments">📝 Assignments</button><button class="tab" data-tab="apps">📥 Apps to download</button><button class="tab" data-tab="quizzes">📝 Quizes</button><button class="tab" data-tab="learn">🎓 Learn Arduino</button><button class="tab" data-tab="teacher">🛠 Heads Only</button>
 </div>
-<section id="info" class="tabpage"><div class="grid"><div class="card span8"><div class="eyebrow">IEEE MSA STUDENT BRANCH • EGYPT</div><h2>October University for Modern Sciences and Arts</h2><p class="muted">The IEEE MSA Student Branch at October University for Modern Sciences and Arts (MSA University) in 6th of October City, Egypt, operates under the IEEE Egypt Section to bridge academic theory and practical engineering. It empowers future engineers through hands-on technical tracks in robotics, embedded systems, electronics, and software development, alongside leadership training, hackathons, and local IEEE competitions.</p><h3 style="margin-top:22px">Explore this website</h3><div class="info-list"><div><strong>Sessions and Attendance</strong><br><span class="small">Access the session presentation and register attendance.</span></div><div><strong>Learning Games</strong><br><span class="small">Practice engineering skills through in-browser activities.</span></div><div><strong>Components, Projects, and Apps</strong><br><span class="small">Prepare your kit and find useful learning resources.</span></div></div></div><div class="card span4"><div class="eyebrow">QUESTIONS?</div><h2>Contact</h2><p class="muted">For questions about the IEEE MSA Student Branch or the learning activities, contact:</p><h3 style="margin-top:22px">Mostafa Amr</h3><a href="mailto:mostafa.amr9@msa.edu.eg" style="color:#69d9ff;word-break:break-word">mostafa.amr9@msa.edu.eg</a></div></div></section>
+<section id="info" class="tabpage"><div class="grid"><div class="card span8"><div class="eyebrow">IEEE MSA STUDENT BRANCH • EGYPT</div><h2>October University for Modern Sciences and Arts</h2><p class="muted">The IEEE MSA Student Branch at October University for Modern Sciences and Arts (MSA University) in 6th of October City, Egypt, operates under the IEEE Egypt Section to bridge academic theory and practical engineering. It empowers future engineers through hands-on technical tracks in robotics, embedded systems, electronics, and software development, alongside leadership training, hackathons, and local IEEE competitions.</p><h3 style="margin-top:22px">Explore this website</h3><div class="info-list"><div><strong>Sessions and Attendance</strong><br><span class="small">Access the session presentation and register attendance.</span></div><div><strong>Learning Games</strong><br><span class="small">Practice engineering skills through in-browser activities.</span></div><div><strong>Components, Projects, and Apps</strong><br><span class="small">Prepare your kit and find useful learning resources.</span></div></div></div><div class="card span4"><div class="eyebrow">QUESTIONS?</div><h2>Contact</h2><p class="muted">For questions about the IEEE MSA Student Branch or the learning activities, contact:</p><h3 style="margin-top:22px">Mostafa Amr</h3><a href="mailto:mostafa.amr9@msa.edu.eg" style="color:#e2ff26;word-break:break-word">mostafa.amr9@msa.edu.eg</a></div></div></section>
 <section id="play" class="tabpage hidden">
 <div class="grid">
 <div class="card span7 login-card" id="joinCard">
@@ -164,6 +217,24 @@ void loop() {
 <section id="projects" class="tabpage hidden"><div class="card presentation-hero"><div class="ppt-icon" aria-hidden="true">⌁</div><div class="presentation-copy"><div class="eyebrow">PROJECT RESOURCE</div><h2>Arduino and Sensors Manual</h2><p class="muted">Use this manual as a reference while planning Arduino and sensor projects.</p><div class="file-meta"><span>PDF manual</span><span>Arduino</span><span>Sensors</span></div><div class="actions"><a href="assets/Arduino and Sensors Manual.pdf" target="_blank" rel="noopener"><button type="button">Open manual</button></a><a href="assets/Arduino and Sensors Manual.pdf" download><button type="button" class="secondary">Download PDF</button></a></div></div></div></section>
 <section id="assignments" class="tabpage hidden"><div class="card presentation-hero"><div class="ppt-icon" aria-hidden="true">1</div><div class="presentation-copy"><div class="eyebrow">ASSIGNMENT 1</div><h2>Tinkercad Arduino LED</h2><p class="muted">Build and test the Arduino LED circuit in Tinkercad, then submit your completed assignment file.</p><div class="file-meta"><span>PDF brief</span><span>Tinkercad</span><span>Arduino LED</span></div><div class="actions"><a href="assets/Robotics_Assignment_1_Tinkercad_Arduino_LED.pdf" target="_blank" rel="noopener"><button type="button" class="secondary">Open assignment brief</button></a><button id="assignmentDownload">Download assignment</button><label id="assignmentUploadLabel" class="ghost" style="display:inline-flex;align-items:center;cursor:pointer;padding:12px 16px;border-radius:12px">Upload submission<input id="assignmentUpload" type="file" hidden></label></div><p class="small muted">Sign in first, then choose your file. A "Send on WhatsApp" button appears with your details already written; attach the file in WhatsApp and press Send.</p></div></div></section>
 <section id="quizzes" class="tabpage hidden"><div class="card presentation-hero" style="margin-bottom:16px"><div class="ppt-icon" aria-hidden="true">1</div><div class="presentation-copy"><div class="eyebrow">IEEE ROBOTICS</div><h2>Quiz 1</h2><p class="muted">Start the first electronics and robotics quiz.</p><div class="actions"><button class="quiz-choice" data-quiz-index="0">Open Quiz 1<span class="small">Go to Player Login</span></button></div></div></div><div class="card presentation-hero"><div class="ppt-icon" aria-hidden="true">2</div><div class="presentation-copy"><div class="eyebrow">IEEE ROBOTICS</div><h2>Quiz 2</h2><p class="muted">Start the second electronics and robotics quiz.</p><div class="actions"><button class="quiz-choice" data-quiz-index="1">Open Quiz 2<span class="small">Go to Player Login</span></button></div></div></div><div class="card presentation-hero" style="margin-top:16px"><div class="ppt-icon" aria-hidden="true">3</div><div class="presentation-copy"><div class="eyebrow">IEEE ROBOTICS</div><h2>Quiz 3 — Sensors</h2><p class="muted">Test what you learned in the sensors session: ultrasonic, LDR, PIR, gas, flame, touch, load cell, gyroscope and Hall effect sensors.</p><div class="actions"><button class="quiz-choice" data-quiz-index="2">Open Quiz 3<span class="small">Go to Player Login</span></button></div></div></div></section>
+<section id="learn" class="tabpage hidden">
+<div class="card la-head"><div><div class="eyebrow">INTERACTIVE 3D LESSONS</div><h2>🎓 Learn Arduino</h2><p class="muted">16 beginner lessons on a 3D Arduino board. Pick a lesson, press Run and watch the circuit work. Drag the board to rotate it, scroll to zoom.</p></div><div class="la-prog"><div class="small muted" id="laProgText">0/16 lessons tried</div><div class="progress"><div id="laProgBar"></div></div></div></div>
+<div class="la-grid">
+<div class="la-left">
+<div class="card la-stage-card">
+<div class="la-stage-top"><div><strong id="laTitle"></strong><div class="small muted" id="laSub"></div></div><div class="la-nav"><button type="button" class="secondary" id="laPrev">‹ Prev</button><button type="button" class="secondary" id="laNext">Next ›</button></div></div>
+<div class="la-stage" id="laStage"><div class="la-scene" id="laScene"><svg class="la-layer" id="laBase" viewBox="0 0 640 400" aria-label="Arduino Uno and breadboard"></svg><svg class="la-layer" id="laParts" viewBox="0 0 640 400"></svg><svg class="la-layer" id="laWires" viewBox="0 0 640 400"></svg></div></div>
+<div class="la-tipbar small" id="laTip"></div>
+<div class="la-view"><button type="button" id="laRotL" title="Rotate left" aria-label="Rotate left">⟲</button><button type="button" id="laRotR" title="Rotate right" aria-label="Rotate right">⟳</button><button type="button" id="laOut" title="Zoom out" aria-label="Zoom out">−</button><button type="button" id="laIn" title="Zoom in" aria-label="Zoom in">+</button><button type="button" id="laTilt" title="Flat or tilted">Tilt</button><button type="button" id="laReset" title="Reset view">Reset</button><button type="button" id="laSound" class="la-sound">Sound on</button><span class="small muted la-hint">Drag to rotate · scroll to zoom</span></div>
+<div class="la-ctls" id="laControls"></div>
+</div>
+<div class="card la-code-card"><div class="la-code-head"><h3>Try it yourself</h3><div class="la-code-actions"><button type="button" class="secondary" id="laCopy">Copy code</button><button type="button" id="laRunBtn" class="la-run">Run</button></div></div><pre class="la-code" id="laCode"></pre>
+<div class="la-console"><div class="la-console-head"><span class="la-dot"></span>Serial monitor<span class="la-status" id="laStatus">Stopped</span></div><div class="la-lines" id="laLines" aria-live="polite"></div></div></div>
+</div>
+<div class="la-right">
+<div class="card la-info"><div class="la-tabs"><button type="button" class="la-tab active">Overview</button><button type="button" class="la-tab">Pinout</button><button type="button" class="la-tab">Example</button><button type="button" class="la-tab">Specs</button></div><div id="laInfo" class="la-info-body"></div></div>
+<div class="card"><h3>Lessons</h3><ol class="la-list" id="laList"></ol></div>
+</div></div></section>
 <section id="teacher" class="tabpage hidden"><div class="card" id="teacherGate" style="max-width:560px;margin:0 auto 16px"><div class="eyebrow">RESTRICTED ACCESS</div><h2>Heads Only login</h2><p class="muted">Enter the teacher access code to manage quizzes, attendance, students, and assignments.</p><label for="teacherPassword">Access code</label><input id="teacherPassword" type="password" autocomplete="off" placeholder="Enter teacher code"><div class="actions"><button id="unlockTeacher">Unlock Heads Only</button></div><div id="teacherGateMsg" class="notice hidden"></div></div><div id="teacherWorkspace" class="hidden"><div class="teacher-tabs"><button class="teacher-tab active" data-teacher-panel="quiz">Quiz</button><button class="teacher-tab" data-teacher-panel="attendance">Attendance</button><button class="teacher-tab" data-teacher-panel="students">Students</button><button class="teacher-tab" data-teacher-panel="assignments">Assignments</button></div><div class="teacher-panel active" id="teacherPanel-quiz"><div class="grid"><div class="card span7"><div class="eyebrow">QUIZ MANAGEMENT</div><h2>Create a quiz</h2><p class="muted">Make a room code and add multiple-choice questions. This starter version keeps your quiz in this browser.</p>
 <label for="teacherTitle">Quiz title</label><input id="teacherTitle" value="IEEE Robotics Quiz — Electronics & Robotics Level Check">
 <div class="row"><div><label for="teacherCode">Room code</label><input id="teacherCode" value="IEEE10" maxlength="20"></div><div><label for="teacherTime">Timer (seconds/question)</label><input id="teacherTime" type="number" min="5" max="180" value="30"></div></div>
@@ -172,7 +243,7 @@ void loop() {
 <div class="row"><div><label for="optC">Option C</label><input id="optC" placeholder="Option C"></div><div><label for="optD">Option D</label><input id="optD" placeholder="Option D"></div></div>
 <div class="row"><div><label for="correctOpt">Correct answer</label><select id="correctOpt"><option value="0">A</option><option value="1">B</option><option value="2">C</option><option value="3">D</option></select></div><div><label for="explanation">Explanation (optional)</label><input id="explanation" placeholder="Why is it correct?"></div></div>
 <div class="actions"><button id="addQuestion">+ Add question</button><button class="secondary" id="saveQuiz">Save quiz</button><button class="ghost" id="addQuiz">+ Add quiz</button></div><div id="teacherMsg" class="notice hidden"></div></div>
-<div class="card span5"><div class="eyebrow">QUIZ BUILDER</div><h2 id="builderTitle">Questions in this quiz</h2><div id="questionList"></div><div class="actions"><button class="secondary" id="loadSample">Load sample quiz</button><button class="ghost" id="clearQuestions">Clear questions</button></div><hr style="border-color:#2a3650;margin:22px 0"><h3>Student access</h3><p class="muted small">After publishing your site, students can scan a QR code that points to the site's public URL. A static local file alone cannot create a public shareable link.</p><label for="publicUrl">Published website URL</label><input id="publicUrl" placeholder="https://your-site.example"><div class="actions"><button id="makeQR">Generate QR code</button></div><div id="qrWrap" class="hidden" style="text-align:center;margin-top:14px"><img id="qrImage" alt="QR code for student access" style="max-width:220px;width:100%;background:white;padding:10px;border-radius:12px"><p class="small muted">Scan to open your published quiz website.</p></div></div></div></div><div class="teacher-panel" id="teacherPanel-attendance"><div class="card"><div class="eyebrow">ATTENDANCE MANAGEMENT</div><h2>Weekly session passcode</h2><p class="muted">Students can check in every Sunday from 3:30 PM to 5:30 PM. The passcode changes automatically every week.</p><div id="weekCodeInfo" class="notice"></div><label for="teacherAttendanceCode">Session passcode (optional custom code for this week)</label><input id="teacherAttendanceCode" placeholder="e.g. IEEE21881"><div class="actions"><button id="saveAttendanceCode">Save passcode</button></div><div id="attendanceCodeMsg" class="notice hidden"></div>
+<div class="card span5"><div class="eyebrow">QUIZ BUILDER</div><h2 id="builderTitle">Questions in this quiz</h2><div id="questionList"></div><div class="actions"><button class="secondary" id="loadSample">Load sample quiz</button><button class="ghost" id="clearQuestions">Clear questions</button></div><hr style="border-color:#1d2b44;margin:22px 0"><h3>Student access</h3><p class="muted small">After publishing your site, students can scan a QR code that points to the site's public URL. A static local file alone cannot create a public shareable link.</p><label for="publicUrl">Published website URL</label><input id="publicUrl" placeholder="https://your-site.example"><div class="actions"><button id="makeQR">Generate QR code</button></div><div id="qrWrap" class="hidden" style="text-align:center;margin-top:14px"><img id="qrImage" alt="QR code for student access" style="max-width:220px;width:100%;background:white;padding:10px;border-radius:12px"><p class="small muted">Scan to open your published quiz website.</p></div></div></div></div><div class="teacher-panel" id="teacherPanel-attendance"><div class="card"><div class="eyebrow">ATTENDANCE MANAGEMENT</div><h2>Weekly session passcode</h2><p class="muted">Students can check in every Sunday from 3:30 PM to 5:30 PM. The passcode changes automatically every week.</p><div id="weekCodeInfo" class="notice"></div><label for="teacherAttendanceCode">Session passcode (optional custom code for this week)</label><input id="teacherAttendanceCode" placeholder="e.g. IEEE21881"><div class="actions"><button id="saveAttendanceCode">Save passcode</button></div><div id="attendanceCodeMsg" class="notice hidden"></div>
 <div class="card" style="margin-top:18px"><div class="eyebrow">ATTENDANCE QR CODE</div><h3>Scan to check in</h3><p class="muted small">Show this QR code in class. Students scan it, the website opens on the Attendance tab with this week's code already filled in, and they press "Mark me attended". Last week's QR stops working when the code changes.</p><label for="qrSiteUrl">Published website URL</label><input id="qrSiteUrl" placeholder="https://your-site.example"><div class="actions"><button id="genAttendanceQR">Generate this week's QR code</button></div><div id="attendanceQrWrap" class="hidden" style="text-align:center;margin-top:14px"><img id="attendanceQrImg" alt="Attendance QR code" style="width:min(300px,100%);background:#fff;padding:10px;border-radius:14px"><p class="small muted" id="attendanceQrCaption"></p></div></div><h3 style="margin-top:20px">Students who entered the code</h3><div id="attendanceStudentList"><p class="muted">No attendance records yet.</p></div></div></div><div class="teacher-panel" id="teacherPanel-students"><div class="card"><div class="eyebrow">STUDENT PROFILES</div><h2>Signed-in students</h2><p class="muted small">Profiles exist only in the current browser until a shared backend is connected.</p><div id="studentList"><p class="muted">No student profiles are available in this browser yet.</p></div></div></div><div class="teacher-panel" id="teacherPanel-assignments"><div class="card"><div class="eyebrow">ASSIGNMENT MANAGEMENT</div><h2>Assignment 1</h2><p class="muted">Create the assignment brief and review submissions here.</p><label for="assignmentBrief">Assignment brief</label><textarea id="assignmentBrief" placeholder="Describe the assignment for students"></textarea><label for="assignmentFile">Assignment file</label><input id="assignmentFile" type="file"><div class="actions"><button id="publishAssignment">Publish Assignment 1</button></div><div id="assignmentManagerMsg" class="notice hidden"></div><h3 style="margin-top:20px">Student submissions</h3><div id="submissionList"><p class="muted">No submissions yet.</p></div></div></div></div></section>
 <div class="footer">IEEE ROBOTICS • Beginner learning experience • Scores stay in this browser until a shared backend is connected.</div>
 </main>
@@ -211,7 +282,7 @@ function loadState(){try{return JSON.parse(localStorage.getItem(STORAGE))||{scor
 function persist(){localStorage.setItem(STORAGE,JSON.stringify(state))}
 if(quiz.code==='KTL101'||quiz.title==='Electronics & Robotics — Level Check'){quiz.code='IEEE10';quiz.title='IEEE Robotics Quiz — Electronics & Robotics Level Check';state.quiz=quiz;persist()}
 function escapeHTML(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function showTab(name){document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.tab===name));document.querySelectorAll('.mobile-nav [data-mobile-tab]').forEach(b=>b.classList.toggle('active',b.dataset.mobileTab===name));document.querySelectorAll('.tabpage').forEach(p=>p.classList.toggle('hidden',p.id!==name));if(name==='teacher'&&teacherUnlocked)renderQuestions();if(name==='parts')renderPartsChecklist();if(name==='attendance')renderAttendance();if(name==='lab')document.querySelectorAll('#lab .pin.terminal').forEach(b=>b.onclick=()=>{$('pinInfo').textContent=(pinDescriptions[b.dataset.terminal]||`${b.dataset.terminal}: labeled Arduino connection pin.`)})}
+function showTab(name){document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.tab===name));document.querySelectorAll('.mobile-nav [data-mobile-tab]').forEach(b=>b.classList.toggle('active',b.dataset.mobileTab===name));document.querySelectorAll('.tabpage').forEach(p=>p.classList.toggle('hidden',p.id!==name));if(name==='teacher'&&teacherUnlocked)renderQuestions();if(name==='parts')renderPartsChecklist();if(name==='learn')initLearn();else if(LA.built)laStop();if(name==='attendance')renderAttendance();if(name==='lab')document.querySelectorAll('#lab .pin.terminal').forEach(b=>b.onclick=()=>{$('pinInfo').textContent=(pinDescriptions[b.dataset.terminal]||`${b.dataset.terminal}: labeled Arduino connection pin.`)})}
 document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>showTab(b.dataset.tab)));
 document.querySelectorAll('[data-mobile-tab]').forEach(b=>b.addEventListener('click',()=>showTab(b.dataset.mobileTab)));
 function closeMenu(){$('menuPanel').classList.add('hidden')}
@@ -243,7 +314,7 @@ function manualAttendance(){try{return JSON.parse(localStorage.getItem(MANUAL_AT
 function attendanceAccess(now=new Date()){const manual=manualAttendance();if(manual&&manual.date===now.toISOString().slice(0,10))return{open:manual.open,manual:true,changedAt:manual.changedAt};const w=sessionWindow(now);return{open:now>=w.start&&now<=w.end,manual:false,start:w.start,end:w.end}}
 function renderAttendance(){const now=new Date(),access=attendanceAccess(now),w=sessionWindow(now),key=sundayKey(now),data=attendanceData(),profile=getProfile();if(!access.open&&now>w.end&&!data[key]&&profile){data[key]={status:'absent',student:profile.id,name:profile.name,markedAt:now.toISOString()};saveAttendance(data)}const record=data[key];let headline='';if(record?.status==='attended')headline='ATTENDED ✓';else if(access.manual)headline=access.open?'ATTENDANCE OPEN':'ATTENDANCE CLOSED';else if(now>w.end)headline='ABSENT';else if(now<w.start)headline='TIME LEFT BEFORE THE SESSION';else headline='SESSION OPEN';if(access.manual){$('attendanceClock').textContent=access.open?'OPEN NOW':'CLOSED'}else if(now<w.start){const diff=w.start-now;$('attendanceClock').textContent=`${String(Math.floor(diff/3600000)).padStart(2,'0')}:${String(Math.floor(diff%3600000/60000)).padStart(2,'0')}:${String(Math.floor(diff%60000/1000)).padStart(2,'0')}`}else $('attendanceClock').textContent=headline;$('attendanceWindowText').textContent=access.manual?(access.open?'The instructor opened attendance manually. Enter the classroom code now.':'Attendance was closed by the instructor.'):`${headline} · Sunday ${w.start.toLocaleTimeString([], {hour:'numeric',minute:'2-digit'})}–${w.end.toLocaleTimeString([], {hour:'numeric',minute:'2-digit'})}${profile?` · ${profile.name}`:' · Sign in to check in'}`;$('attendanceCode').disabled=!access.open||record?.status==='attended';$('attendanceBtn').disabled=!access.open||record?.status==='attended';$('attendanceBtn').textContent=record?.status==='attended'?'Attendance recorded':access.open?'Mark me attended':(now>w.end?'Absent':'Attendance closed')}
 /* Attendance -> WhatsApp: message is pre-filled, student only presses Send */
-function checkAttendance(){const now=new Date(),access=attendanceAccess(now),profile=getProfile(),message=$('attendanceMessage');if(!profile){openAuth('signin');message.textContent='Sign in or create a profile before checking in.';message.classList.remove('hidden');return}if(!access.open){message.textContent='Attendance is currently closed. Wait for the instructor to open it.';message.classList.remove('hidden');return}if($('attendanceCode').value.trim()!==getAttendanceCode()){message.textContent='Incorrect classroom passcode. Ask the instructor for the current code.';message.classList.remove('hidden');return}const data=attendanceData();data[sundayKey(now)]={status:'attended',student:profile.id,name:profile.name,email:profile.email,major:profile.major||'',checkedInAt:now.toISOString()};saveAttendance(data);const text=['IEEE ROBOTICS - Attendance check-in','Name: '+profile.name,'University ID: '+profile.id,'Email: '+profile.email,'Faculty / major: '+(profile.major||'Not provided'),'Check-in time: '+now.toLocaleTimeString([], {hour:'numeric',minute:'2-digit',second:'2-digit'}),'Date: '+now.toLocaleDateString()].join('\n');const url=waLink(text);message.innerHTML='Attendance saved ✓ WhatsApp is opening - just press Send. If it did not open, <a href="'+url+'" target="_blank" rel="noopener" style="color:#69d9ff;font-weight:700">tap here to open WhatsApp</a>.';message.classList.remove('hidden');renderAttendance();renderProfileHistory();renderAttendanceStudentList();const w=window.open(url,'_blank','noopener');if(!w)window.location.assign(url)}
+function checkAttendance(){const now=new Date(),access=attendanceAccess(now),profile=getProfile(),message=$('attendanceMessage');if(!profile){openAuth('signin');message.textContent='Sign in or create a profile before checking in.';message.classList.remove('hidden');return}if(!access.open){message.textContent='Attendance is currently closed. Wait for the instructor to open it.';message.classList.remove('hidden');return}if($('attendanceCode').value.trim()!==getAttendanceCode()){message.textContent='Incorrect classroom passcode. Ask the instructor for the current code.';message.classList.remove('hidden');return}const data=attendanceData();data[sundayKey(now)]={status:'attended',student:profile.id,name:profile.name,email:profile.email,major:profile.major||'',checkedInAt:now.toISOString()};saveAttendance(data);const text=['IEEE ROBOTICS - Attendance check-in','Name: '+profile.name,'University ID: '+profile.id,'Email: '+profile.email,'Faculty / major: '+(profile.major||'Not provided'),'Check-in time: '+now.toLocaleTimeString([], {hour:'numeric',minute:'2-digit',second:'2-digit'}),'Date: '+now.toLocaleDateString()].join('\n');const url=waLink(text);message.innerHTML='Attendance saved ✓ WhatsApp is opening - just press Send. If it did not open, <a href="'+url+'" target="_blank" rel="noopener" style="color:#e2ff26;font-weight:700">tap here to open WhatsApp</a>.';message.classList.remove('hidden');renderAttendance();renderProfileHistory();renderAttendanceStudentList();const w=window.open(url,'_blank','noopener');if(!w)window.location.assign(url)}
 $('attendanceBtn').onclick=checkAttendance;$('attendanceProfileBtn').onclick=()=>openAuth('signin');
  
 /* ===== Heads Only ===== */
@@ -298,10 +369,10 @@ function gamePanel(title,html){if(snakeTimer){clearInterval(snakeTimer);snakeTim
 function renderPlayableGame(key){if(key==='maze'){renderRobotMaze();return}if(key==='troubleshoot'){renderTroubleshooter();return}if(key==='autopsy'){gamePanel('Circuit Autopsy Workbench','<p class="muted">Repair the circuit by connecting D13 to the resistor, the resistor to the LED, and the LED to GND. Then run the circuit.</p><div class="game-controls"><button id="openCircuitWorkbench">Start Circuit Autopsy</button></div><div id="dynamicResult" class="notice game-result">Use the virtual multimeter mindset: verify power, polarity, and the return path.</div>');$('openCircuitWorkbench').onclick=()=>{$('startCircuitBtn').click();document.querySelector('.game-layout').scrollIntoView({behavior:'smooth',block:'start'})};return}if(key==='pid'){gamePanel('PID Tuner','<p class="muted">Set the three PID gains, then run the response test. A balanced tuning target is Kp 55, Ki 18, Kd 12.</p><div class="game-controls"><label>Kp <input id="kp" type="range" min="0" max="100" value="25"></label><label>Ki <input id="ki" type="range" min="0" max="40" value="5"></label><label>Kd <input id="kd" type="range" min="0" max="30" value="4"></label><button id="runPid">Run response</button></div><div id="dynamicResult" class="notice game-result">Tune the gains and run the simulation.</div>');$('runPid').onclick=()=>{const error=Math.abs(+$('kp').value-55)+Math.abs(+$('ki').value-18)*2+Math.abs(+$('kd').value-12)*2;$('dynamicResult').textContent=error<15?'Stable response: low overshoot and quick settling. Score: '+Math.max(100,500-error*10):'Response is unstable or slow. Adjust the gains closer to the target.'};return}if(key==='bus'){gamePanel('Bus Logic Analyzer','<p class="muted">A sensor is not responding on an I2C bus. Choose the most likely repair after inspecting the timing traces.</p><div class="choice-row"><button data-bus="wrong">Increase the LED brightness</button><button data-bus="right">Add pull-up resistors to SDA and SCL</button><button data-bus="wrong">Reverse the battery polarity</button></div><div id="dynamicResult" class="notice game-result">Select a repair.</div>');document.querySelectorAll('[data-bus]').forEach(b=>b.onclick=()=>{$('dynamicResult').textContent=b.dataset.bus==='right'?'Correct. I2C needs pull-up resistors to create valid high logic levels.':'Not quite. Inspect the I2C signal lines and try again.'});return}if(key==='fsm'){let states=[];gamePanel('State Machine Architect','<p class="muted">Build the robot sequence for a line follower that detects an obstacle and enters a safe fault state.</p><div class="choice-row"><button data-state="Idle">Idle</button><button data-state="Scan">Scan</button><button data-state="Move">Move</button><button data-state="Avoid">Avoid</button><button data-state="Fault">Fault</button><button id="testFsm" class="secondary">Test FSM</button><button id="resetFsm" class="ghost">Reset</button></div><div id="dynamicResult" class="notice game-result">Select states in the order: Idle, Scan, Move, Avoid, Fault.</div>');document.querySelectorAll('[data-state]').forEach(b=>b.onclick=()=>{states.push(b.dataset.state);$('dynamicResult').textContent='Current state path: '+states.join(' → ')});$('resetFsm').onclick=()=>{states=[];$('dynamicResult').textContent='State path cleared.'};$('testFsm').onclick=()=>{$('dynamicResult').textContent=states.join('|')==='Idle|Scan|Move|Avoid|Fault'?'FSM passed the scenario test.':'The state sequence needs adjustment. Start with Idle, then Scan.'};return}if(key==='thermal'){gamePanel('Power & Thermal Budgeter','<p class="muted">Choose a motor duty cycle and heatsink thermal resistance. Keep junction temperature below 150 C while maintaining enough duty for the mission.</p><div class="game-controls"><label>Duty cycle <input id="duty" type="range" min="20" max="100" value="50"></label><label>Heatsink resistance <input id="thermal" type="range" min="2" max="25" value="10"></label><button id="runThermal">Run mission</button></div><div id="dynamicResult" class="notice game-result">Configure the board, then run the mission.</div>');$('runThermal').onclick=()=>{const duty=+$('duty').value,thermal=+$('thermal').value,temp=Math.round(35+duty*0.65+thermal*2.8);$('dynamicResult').textContent=temp<150&&duty>=45?'Mission complete. Junction temperature: '+temp+' C.':'Thermal shutdown risk. Junction temperature: '+temp+' C. Reduce duty cycle or use a better heatsink.'};return}renderSnakeGame()}
  
 /* Power Snake (joystick version) */
-function renderSnakeGame(){gamePanel('Power Snake','<p class="muted">Use the joystick to collect energy nodes. Avoid the border and your battery tail.</p><canvas id="snakeCanvas" class="snake-canvas" width="360" height="360" aria-label="Power Snake game"></canvas><div class="joystick" aria-label="Power Snake joystick"><button class="joy up" data-joy="up">↑</button><button class="joy left" data-joy="left">←</button><button class="joy down" data-joy="down">↓</button><button class="joy right" data-joy="right">→</button></div><div class="game-controls"><button id="restartSnake" class="secondary">Restart</button></div><div id="dynamicResult" class="notice game-result">Charge: 0% · Score: 0</div>');let snake=[{x:8,y:8},{x:7,y:8},{x:6,y:8}],dir={x:1,y:0},food={x:13,y:12},score=0,alive=true;const canvas=$('snakeCanvas'),ctx=canvas.getContext('2d'),cell=18,dirs={up:{x:0,y:-1},down:{x:0,y:1},left:{x:-1,y:0},right:{x:1,y:0}};const change=d=>{if(d.x!==-dir.x||d.y!==-dir.y)dir=d};function spawn(){do{food={x:Math.floor(Math.random()*20),y:Math.floor(Math.random()*20)}}while(snake.some(p=>p.x===food.x&&p.y===food.y))}function draw(){ctx.fillStyle='#07111e';ctx.fillRect(0,0,360,360);ctx.strokeStyle='#16334b';for(let i=0;i<=20;i++){ctx.beginPath();ctx.moveTo(i*cell,0);ctx.lineTo(i*cell,360);ctx.moveTo(0,i*cell);ctx.lineTo(360,i*cell);ctx.stroke()}ctx.fillStyle='#ff9f43';ctx.fillRect(food.x*cell+3,food.y*cell+3,cell-6,cell-6);snake.forEach((p,i)=>{ctx.fillStyle=i?'#22c55e':'#38bdf8';ctx.fillRect(p.x*cell+2,p.y*cell+2,cell-4,cell-4)})}function tick(){const head={x:snake[0].x+dir.x,y:snake[0].y+dir.y};if(head.x<0||head.y<0||head.x>=20||head.y>=20||snake.some(p=>p.x===head.x&&p.y===head.y)){alive=false;clearInterval(snakeTimer);snakeTimer=null;$('dynamicResult').textContent='Short circuit. Final score: '+score+'. Press Restart to try again.';return}snake.unshift(head);if(head.x===food.x&&head.y===food.y){score++;spawn();$('dynamicResult').textContent='Charge: '+Math.min(100,score*10)+'% · Score: '+score}else snake.pop();draw()}document.querySelectorAll('[data-joy]').forEach(b=>b.onclick=()=>change(dirs[b.dataset.joy]));$('restartSnake').onclick=()=>renderSnakeGame();draw();snakeTimer=setInterval(tick,420)}
+function renderSnakeGame(){gamePanel('Power Snake','<p class="muted">Use the joystick to collect energy nodes. Avoid the border and your battery tail.</p><canvas id="snakeCanvas" class="snake-canvas" width="360" height="360" aria-label="Power Snake game"></canvas><div class="joystick" aria-label="Power Snake joystick"><button class="joy up" data-joy="up">↑</button><button class="joy left" data-joy="left">←</button><button class="joy down" data-joy="down">↓</button><button class="joy right" data-joy="right">→</button></div><div class="game-controls"><button id="restartSnake" class="secondary">Restart</button></div><div id="dynamicResult" class="notice game-result">Charge: 0% · Score: 0</div>');let snake=[{x:8,y:8},{x:7,y:8},{x:6,y:8}],dir={x:1,y:0},food={x:13,y:12},score=0,alive=true;const canvas=$('snakeCanvas'),ctx=canvas.getContext('2d'),cell=18,dirs={up:{x:0,y:-1},down:{x:0,y:1},left:{x:-1,y:0},right:{x:1,y:0}};const change=d=>{if(d.x!==-dir.x||d.y!==-dir.y)dir=d};function spawn(){do{food={x:Math.floor(Math.random()*20),y:Math.floor(Math.random()*20)}}while(snake.some(p=>p.x===food.x&&p.y===food.y))}function draw(){ctx.fillStyle='#060b0a';ctx.fillRect(0,0,360,360);ctx.strokeStyle='#1a263d';for(let i=0;i<=20;i++){ctx.beginPath();ctx.moveTo(i*cell,0);ctx.lineTo(i*cell,360);ctx.moveTo(0,i*cell);ctx.lineTo(360,i*cell);ctx.stroke()}ctx.fillStyle='#175fd4';ctx.fillRect(food.x*cell+3,food.y*cell+3,cell-6,cell-6);snake.forEach((p,i)=>{ctx.fillStyle=i?'#22c55e':'#e2ff26';ctx.fillRect(p.x*cell+2,p.y*cell+2,cell-4,cell-4)})}function tick(){const head={x:snake[0].x+dir.x,y:snake[0].y+dir.y};if(head.x<0||head.y<0||head.x>=20||head.y>=20||snake.some(p=>p.x===head.x&&p.y===head.y)){alive=false;clearInterval(snakeTimer);snakeTimer=null;$('dynamicResult').textContent='Short circuit. Final score: '+score+'. Press Restart to try again.';return}snake.unshift(head);if(head.x===food.x&&head.y===food.y){score++;spawn();$('dynamicResult').textContent='Charge: '+Math.min(100,score*10)+'% · Score: '+score}else snake.pop();draw()}document.querySelectorAll('[data-joy]').forEach(b=>b.onclick=()=>change(dirs[b.dataset.joy]));$('restartSnake').onclick=()=>renderSnakeGame();draw();snakeTimer=setInterval(tick,420)}
  
 /* Robot Maze (10 portal levels) */
-function renderRobotMaze(){let level=0,robot={x:0,y:0};const levels=[{portal:[5,3],walls:['1,1','3,1','3,2']},{portal:[5,0],walls:['1,0','1,1','2,2','4,2']},{portal:[4,3],walls:['2,0','2,1','2,2','4,1']},{portal:[5,2],walls:['1,2','2,2','3,0','3,1']},{portal:[4,0],walls:['0,1','1,1','3,1','4,2']},{portal:[5,3],walls:['1,0','2,0','2,1','4,1','4,2']},{portal:[3,3],walls:['1,1','1,2','2,2','4,0','4,1']},{portal:[5,1],walls:['0,2','1,2','3,1','3,2','4,2']},{portal:[4,3],walls:['1,0','1,1','2,1','3,2','5,2']},{portal:[5,3],walls:['1,1','2,1','3,1','3,2','4,2']}];gamePanel('Robot Maze','<p class="muted">Reach the glowing portal to win each level. The portal automatically opens the next level.</p><canvas id="mazeCanvas" class="maze-canvas" width="600" height="400"></canvas><div class="game-controls"><button id="mazeUp">↑</button><button id="mazeLeft">←</button><button id="mazeDown">↓</button><button id="mazeRight">→</button><button id="mazeReset" class="secondary">Restart level</button></div><div id="dynamicResult" class="notice game-result">Level 1 of 10: find the portal.</div>');const canvas=$('mazeCanvas'),ctx=canvas.getContext('2d'),cols=6,rows=4,cell=100;function draw(){const data=levels[level];ctx.fillStyle='#050a15';ctx.fillRect(0,0,600,400);for(let y=0;y<rows;y++)for(let x=0;x<cols;x++){ctx.strokeStyle='#293d6b';ctx.strokeRect(x*cell,y*cell,cell,cell)}data.walls.forEach(p=>{const[x,y]=p.split(',').map(Number);ctx.fillStyle='#ef4a9a';ctx.fillRect(x*cell+6,y*cell+6,cell-12,cell-12)});const[px,py]=data.portal;ctx.fillStyle='#a855f7';ctx.shadowColor='#d946ef';ctx.shadowBlur=20;ctx.beginPath();ctx.arc(px*cell+50,py*cell+50,28,0,Math.PI*2);ctx.fill();ctx.shadowBlur=0;ctx.fillStyle='#fff';ctx.font='30px sans-serif';ctx.fillText('◉',px*cell+35,py*cell+61);ctx.fillStyle='#38bdf8';ctx.beginPath();ctx.arc(robot.x*cell+50,robot.y*cell+50,25,0,Math.PI*2);ctx.fill();ctx.font='26px sans-serif';ctx.fillText('🤖',robot.x*cell+35,robot.y*cell+60)}function move(dx,dy){const data=levels[level],next={x:robot.x+dx,y:robot.y+dy},key=next.x+','+next.y;if(next.x<0||next.y<0||next.x>=cols||next.y>=rows||data.walls.includes(key))return;robot=next;if(robot.x===data.portal[0]&&robot.y===data.portal[1]){if(level===levels.length-1){$('dynamicResult').textContent='Portal complete! You cleared all 10 Robot Maze levels.'}else{level++;robot={x:0,y:0};$('dynamicResult').textContent='Portal activated! Level '+(level+1)+' of 10.'}}draw()}[['mazeUp',0,-1],['mazeDown',0,1],['mazeLeft',-1,0],['mazeRight',1,0]].forEach(([id,x,y])=>$(id).onclick=()=>move(x,y));$('mazeReset').onclick=()=>{robot={x:0,y:0};draw()};draw()}
+function renderRobotMaze(){let level=0,robot={x:0,y:0};const levels=[{portal:[5,3],walls:['1,1','3,1','3,2']},{portal:[5,0],walls:['1,0','1,1','2,2','4,2']},{portal:[4,3],walls:['2,0','2,1','2,2','4,1']},{portal:[5,2],walls:['1,2','2,2','3,0','3,1']},{portal:[4,0],walls:['0,1','1,1','3,1','4,2']},{portal:[5,3],walls:['1,0','2,0','2,1','4,1','4,2']},{portal:[3,3],walls:['1,1','1,2','2,2','4,0','4,1']},{portal:[5,1],walls:['0,2','1,2','3,1','3,2','4,2']},{portal:[4,3],walls:['1,0','1,1','2,1','3,2','5,2']},{portal:[5,3],walls:['1,1','2,1','3,1','3,2','4,2']}];gamePanel('Robot Maze','<p class="muted">Reach the glowing portal to win each level. The portal automatically opens the next level.</p><canvas id="mazeCanvas" class="maze-canvas" width="600" height="400"></canvas><div class="game-controls"><button id="mazeUp">↑</button><button id="mazeLeft">←</button><button id="mazeDown">↓</button><button id="mazeRight">→</button><button id="mazeReset" class="secondary">Restart level</button></div><div id="dynamicResult" class="notice game-result">Level 1 of 10: find the portal.</div>');const canvas=$('mazeCanvas'),ctx=canvas.getContext('2d'),cols=6,rows=4,cell=100;function draw(){const data=levels[level];ctx.fillStyle='#040807';ctx.fillRect(0,0,600,400);for(let y=0;y<rows;y++)for(let x=0;x<cols;x++){ctx.strokeStyle='#304d7f';ctx.strokeRect(x*cell,y*cell,cell,cell)}data.walls.forEach(p=>{const[x,y]=p.split(',').map(Number);ctx.fillStyle='#ef4a9a';ctx.fillRect(x*cell+6,y*cell+6,cell-12,cell-12)});const[px,py]=data.portal;ctx.fillStyle='#175fd2';ctx.shadowColor='#165ccb';ctx.shadowBlur=20;ctx.beginPath();ctx.arc(px*cell+50,py*cell+50,28,0,Math.PI*2);ctx.fill();ctx.shadowBlur=0;ctx.fillStyle='#fff';ctx.font='30px sans-serif';ctx.fillText('◉',px*cell+35,py*cell+61);ctx.fillStyle='#e2ff26';ctx.beginPath();ctx.arc(robot.x*cell+50,robot.y*cell+50,25,0,Math.PI*2);ctx.fill();ctx.font='26px sans-serif';ctx.fillText('🤖',robot.x*cell+35,robot.y*cell+60)}function move(dx,dy){const data=levels[level],next={x:robot.x+dx,y:robot.y+dy},key=next.x+','+next.y;if(next.x<0||next.y<0||next.x>=cols||next.y>=rows||data.walls.includes(key))return;robot=next;if(robot.x===data.portal[0]&&robot.y===data.portal[1]){if(level===levels.length-1){$('dynamicResult').textContent='Portal complete! You cleared all 10 Robot Maze levels.'}else{level++;robot={x:0,y:0};$('dynamicResult').textContent='Portal activated! Level '+(level+1)+' of 10.'}}draw()}[['mazeUp',0,-1],['mazeDown',0,1],['mazeLeft',-1,0],['mazeRight',1,0]].forEach(([id,x,y])=>$(id).onclick=()=>move(x,y));$('mazeReset').onclick=()=>{robot={x:0,y:0};draw()};draw()}
  
 /* Robot Troubleshooter (10 situations, name first, auto-advance, final score) */
 function renderTroubleshooter(){
@@ -348,15 +419,15 @@ addSession2Presentation();
 /* ===== Visual upgrade: hero image + card tilt ===== */
 (function(){
   const grid=document.querySelector('#info .grid');
-  if(grid)grid.insertAdjacentHTML('afterbegin',`<div class="card span12 hero-banner"><div class="hero-text"><div class="eyebrow">WELCOME TO IEEE ROBOTICS</div><h1><span class="gradient">Learn it. Build it. Compete.</span></h1><p class="muted">Sessions, games, a virtual Arduino lab and quizzes, all in one place.</p><div class="actions"><button type="button" onclick="showTab('powerpoint')">Start learning →</button><button type="button" class="secondary" onclick="showTab('game')">Play a game</button></div></div>
-  <svg class="robot-art" viewBox="0 0 240 260" role="img" aria-label="Friendly robot illustration"><defs><linearGradient id="rb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs>
-  <line x1="120" y1="18" x2="120" y2="52" stroke="#aab5d1" stroke-width="5"/><circle class="eye" cx="120" cy="14" r="9" fill="#fbbf24"/>
-  <rect x="55" y="50" width="130" height="95" rx="26" fill="url(#rb)"/><rect x="72" y="70" width="96" height="54" rx="16" fill="#0b1020"/>
-  <circle class="eye" cx="100" cy="97" r="11" fill="#22d3ee"/><circle class="eye" cx="140" cy="97" r="11" fill="#22d3ee"/>
-  <rect x="38" y="82" width="12" height="32" rx="6" fill="#aab5d1"/><rect x="190" y="82" width="12" height="32" rx="6" fill="#aab5d1"/>
-  <rect x="70" y="155" width="100" height="78" rx="20" fill="#1a2541" stroke="url(#rb)" stroke-width="3"/>
-  <path d="M88 180h30l10 14h24M88 205h18l8-10" stroke="#22d3ee" stroke-width="3" fill="none" stroke-linecap="round"/><circle cx="152" cy="194" r="4" fill="#34d399"/><circle cx="106" cy="205" r="4" fill="#fbbf24"/>
-  <rect x="82" y="233" width="28" height="18" rx="6" fill="#aab5d1"/><rect x="130" y="233" width="28" height="18" rx="6" fill="#aab5d1"/></svg></div>`);
+  if(grid)grid.insertAdjacentHTML('afterbegin',`<div class="card span12 hero-banner"><div class="hero-text"><div class="eyebrow">WELCOME TO IEEE ROBOTICS</div><h1><span class="h-lime">Learn</span><span class="h-white">it.</span><br><span class="h-white">Build it.</span> <span class="h-blue">Compete.</span></h1><p class="muted">Sessions, games, a virtual Arduino lab and quizzes, all in one place.</p><div class="actions"><button type="button" onclick="showTab('powerpoint')">Start learning →</button><button type="button" class="secondary" onclick="showTab('game')">Play a game</button></div></div>
+  <svg class="robot-art" viewBox="0 0 240 260" role="img" aria-label="Friendly robot illustration"><defs><linearGradient id="rb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#175ed1"/><stop offset="1" stop-color="#e2ff26"/></linearGradient></defs>
+  <line x1="120" y1="18" x2="120" y2="52" stroke="#ccd5e0" stroke-width="5"/><circle class="eye" cx="120" cy="14" r="9" fill="#e2ff26"/>
+  <rect x="55" y="50" width="130" height="95" rx="26" fill="url(#rb)"/><rect x="72" y="70" width="96" height="54" rx="16" fill="#060d0c"/>
+  <circle class="eye" cx="100" cy="97" r="11" fill="#e2ff26"/><circle class="eye" cx="140" cy="97" r="11" fill="#e2ff26"/>
+  <rect x="38" y="82" width="12" height="32" rx="6" fill="#ccd5e0"/><rect x="190" y="82" width="12" height="32" rx="6" fill="#ccd5e0"/>
+  <rect x="70" y="155" width="100" height="78" rx="20" fill="#172236" stroke="url(#rb)" stroke-width="3"/>
+  <path d="M88 180h30l10 14h24M88 205h18l8-10" stroke="#e2ff26" stroke-width="3" fill="none" stroke-linecap="round"/><circle cx="152" cy="194" r="4" fill="#34d399"/><circle cx="106" cy="205" r="4" fill="#e2ff26"/>
+  <rect x="82" y="233" width="28" height="18" rx="6" fill="#ccd5e0"/><rect x="130" y="233" width="28" height="18" rx="6" fill="#ccd5e0"/></svg></div>`);
  
   const fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
   if(fine)document.addEventListener('pointermove',e=>{
@@ -373,8 +444,628 @@ function updateWeekCodeInfo(){const w=sessionWindow(),next=new Date(w.start);nex
 $('genAttendanceQR').onclick=()=>{const base=$('qrSiteUrl').value.trim();if(!/^https?:\/\//i.test(base)){alert('Enter the full public URL of your published website first (it must start with https://).');return}localStorage.setItem(QR_URL_KEY,base);const code=getAttendanceCode(),link=base.split(/[?#]/)[0]+'?attend='+encodeURIComponent(code);$('attendanceQrImg').src='https://api.qrserver.com/v1/create-qr-code/?size=300x300&margin=10&data='+encodeURIComponent(link);$('attendanceQrCaption').textContent='QR for the '+sundayKey()+' session · code '+code;$('attendanceQrWrap').classList.remove('hidden')};
 function handleAttendanceScan(){const c=new URLSearchParams(location.search).get('attend');if(!c)return;showTab('attendance');$('attendanceCode').value=c;const m=$('attendanceMessage');m.textContent=getProfile()?'QR scanned ✓ The code is filled in. Press "Mark me attended".':'QR scanned ✓ Sign in first (top right), then press "Mark me attended".';m.classList.remove('hidden')}
  
+/* ===== Learn Arduino: interactive 3D lessons built into this site ===== */
+const LA={built:false,rx:50,rz:-8,zoom:1,fit:1,sound:true,running:false,v:{},idx:0,timer:null,t0:0,last:0,curT:0,ev:{},sim:null,osc:null,ac:null,tab:0,done:[]};
+const LA_DONE_KEY='ieeeRobotics.learnDone.v1';
+const NSVG='http://www.w3.org/2000/svg';
+function sv(tag,attrs,parent,txt){const e=document.createElementNS(NSVG,tag);if(attrs)for(const k in attrs)e.setAttribute(k,attrs[k]);if(txt!=null)e.textContent=txt;if(parent)parent.appendChild(e);return e}
+function tx(g,x,y,s,o){return sv('text',Object.assign({x:x,y:y,fill:'#cfe0ff','font-size':8,'font-family':'ui-monospace,Menlo,monospace','text-anchor':'middle'},o||{}),g,s)}
+ 
+/* pin and breadboard coordinates (scene is 640 x 400) */
+const PINS={};
+(function(){let x=72;['AREF','GNDt','D13','D12','D11','D10','D9','D8',null,'D7','D6','D5','D4','D3','D2','D1','D0'].forEach(n=>{if(n){PINS[n]={x:x,y:99};x+=14}else x+=10});
+['IOREF','RESET','3V3','5V','GND','GND2','VIN'].forEach((n,i)=>PINS[n]={x:108+i*14,y:301});
+['A0','A1','A2','A3','A4','A5'].forEach((n,i)=>PINS[n]={x:222+i*14,y:301})})();
+const BB=(c,r)=>({x:352+c*14,y:r<5?132+r*13:214+(r-5)*13});
+const RAIL=(k,c)=>({x:352+c*14,y:{p1:88,m1:101,p2:292,m2:305}[k]});
+const WIRE={sig:'#d4ff26',gnd:'#8a96b3',pwr:'#ff6b5a',blue:'#4f8dff',org:'#ff9f43',wht:'#e8eefc'};
+ 
+function wire(g,a,b,col,bulge){bulge=bulge==null?-50:bulge;const d='M'+a.x+' '+a.y+' C'+a.x+' '+(a.y+bulge)+' '+b.x+' '+(b.y+bulge)+' '+b.x+' '+b.y;
+  sv('path',{d:d,fill:'none',stroke:'#02060f','stroke-width':5.6,'stroke-linecap':'round',opacity:.55},g);
+  sv('path',{d:d,fill:'none',stroke:col,'stroke-width':3.2,'stroke-linecap':'round'},g);
+  [a,b].forEach(p=>sv('circle',{cx:p.x,cy:p.y,r:3.4,fill:col,stroke:'#02060f','stroke-width':1},g))}
+function resistor(g,a,b,bands){const y=a.y,cx=(a.x+b.x)/2;sv('line',{x1:a.x,y1:y,x2:b.x,y2:y,stroke:'#c9ced8','stroke-width':2},g);
+  sv('rect',{x:cx-13,y:y-5,width:26,height:10,rx:4,fill:'#d8c9a0',stroke:'#7a6a3a','stroke-width':.6},g);
+  (bands||['#d11','#d11','#7a4a1c','#c9a227']).forEach((c,i)=>sv('rect',{x:cx-10+i*6,y:y-5,width:2.4,height:10,fill:c},g))}
+function ledShape(g,x,y,col){const gl=sv('circle',{cx:x,cy:y-12,r:22,fill:col,opacity:0,filter:'url(#laBlur)'},g);
+  sv('ellipse',{cx:x,cy:y,rx:9,ry:3.2,fill:'#9aa3b5'},g);
+  const dome=sv('path',{d:'M'+(x-7)+' '+y+' V'+(y-13)+' A7 7 0 0 1 '+(x+7)+' '+(y-13)+' V'+y+'Z',fill:col,opacity:.3,stroke:'#fff','stroke-opacity':.4},g);
+  return{set(v,c2){const k=Math.max(0,Math.min(1,v));gl.setAttribute('opacity',(k*.85).toFixed(2));dome.setAttribute('opacity',(.3+.7*k).toFixed(2));if(c2){gl.setAttribute('fill',c2);dome.setAttribute('fill',c2)}}}}
+function rgbShape(g,x,y){const gl=sv('circle',{cx:x,cy:y-9,r:30,fill:'#fff',opacity:0,filter:'url(#laBlur)'},g);
+  sv('ellipse',{cx:x,cy:y,rx:25,ry:3.6,fill:'#9aa3b5'},g);
+  const body=sv('rect',{x:x-22,y:y-14,width:44,height:14,rx:7,fill:'#fff',opacity:.3,stroke:'#fff','stroke-opacity':.4},g);
+  return{set(r,gr,b){const col='rgb('+r+','+gr+','+b+')',k=Math.max(r,gr,b)/255;gl.setAttribute('fill',col);gl.setAttribute('opacity',(k*.9).toFixed(2));body.setAttribute('fill',col);body.setAttribute('opacity',(.25+.75*k).toFixed(2))}}}
+function buttonShape(g,x,y,s){s=s||26;sv('rect',{x:x-s/2,y:y-s/2,width:s,height:s,rx:3,fill:'#2a3140',stroke:'#0b0f16'},g);
+  const cap=sv('circle',{cx:x,cy:y,r:s*.34,fill:'#4f8dff',stroke:'#cfe0ff','stroke-opacity':.5},g);
+  return{set(p){cap.setAttribute('r',(s*(p?.27:.34)).toFixed(1));cap.setAttribute('fill',p?'#d4ff26':'#4f8dff')}}}
+function potShape(g,x,y){sv('circle',{cx:x,cy:y,r:17,fill:'#1d2430',stroke:'#0b0f16'},g);const k=sv('g',{},g);
+  sv('circle',{cx:x,cy:y,r:11,fill:'#4f8dff',stroke:'#cfe0ff','stroke-opacity':.5},k);
+  sv('line',{x1:x,y1:y,x2:x,y2:y-10,stroke:'#fff','stroke-width':2.4,'stroke-linecap':'round'},k);
+  return{set(f){k.setAttribute('transform','rotate('+(-135+270*f)+' '+x+' '+y+')')}}}
+function ledCircuit(c,pin,col){const P=c.P,W=c.W;resistor(P,BB(4,0),BB(8,0));const A=BB(8,3),K=BB(9,3);
+  const L=ledShape(P,(A.x+K.x)/2,A.y,col);
+  wire(W,PINS[pin],BB(4,1),WIRE.sig,-60);wire(W,PINS.GNDt,RAIL('m1',0),WIRE.gnd,-70);wire(W,BB(9,0),RAIL('m1',9),WIRE.gnd,-10);return L}
+function waveArcs(g,x0,y0,col){const arcs=[0,1,2].map(()=>sv('path',{d:'',fill:'none',stroke:col,'stroke-width':2.4,'stroke-linecap':'round',opacity:0},g));
+  return{draw(t,maxR,active){arcs.forEach((a,i)=>{if(!active){a.setAttribute('opacity',0);return}const ph=((t/900)+i/3)%1,r=8+ph*maxR,an=.62;
+    a.setAttribute('d','M'+(x0+r*Math.cos(-an))+' '+(y0+r*Math.sin(-an))+' A'+r+' '+r+' 0 0 1 '+(x0+r*Math.cos(an))+' '+(y0+r*Math.sin(an)));a.setAttribute('opacity',(1-ph).toFixed(2))})}}}
+ 
+/* ===== the board + breadboard base layer ===== */
+function laDrawBase(B,c){
+  B.innerHTML='<defs><filter id="laBlur" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="6"/></filter><filter id="laShadow" x="-20%" y="-20%" width="140%" height="150%"><feGaussianBlur stdDeviation="9"/></filter><linearGradient id="laBoard" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0c9aa6"/><stop offset="1" stop-color="#056a77"/></linearGradient><linearGradient id="laBread" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8edf6"/><stop offset="1" stop-color="#b9c4d8"/></linearGradient></defs>';
+  sv('rect',{x:20,y:106,width:300,height:220,rx:12,fill:'#000',opacity:.75,filter:'url(#laShadow)'},B);
+  sv('rect',{x:340,y:76,width:288,height:280,rx:12,fill:'#000',opacity:.75,filter:'url(#laShadow)'},B);
+  /* breadboard */
+  sv('rect',{x:336,y:60,width:292,height:280,rx:10,fill:'url(#laBread)',stroke:'#8d9ab3','stroke-width':1.4},B);
+  sv('rect',{x:344,y:190,width:276,height:18,rx:3,fill:'#a6b2c8'},B);
+  [[81,'#ff5a4d'],[108,'#4f8dff'],[285,'#ff5a4d'],[312,'#4f8dff']].forEach(r=>sv('line',{x1:346,y1:r[0],x2:618,y2:r[0],stroke:r[1],'stroke-width':1.6,opacity:.8},B));
+  tx(B,343,92,'+',{fill:'#ff5a4d','font-size':10,'font-weight':900});tx(B,343,105,'-',{fill:'#4f8dff','font-size':12,'font-weight':900});
+  tx(B,343,296,'+',{fill:'#ff5a4d','font-size':10,'font-weight':900});tx(B,343,309,'-',{fill:'#4f8dff','font-size':12,'font-weight':900});
+  let d='';
+  for(let col=0;col<20;col++)for(let r=0;r<10;r++){const p=BB(col,r);d+='M'+(p.x-2)+' '+(p.y-2)+'h4v4h-4z'}
+  ['p1','m1','p2','m2'].forEach(k=>{for(let col=0;col<20;col++){if(col%5===4)continue;const p=RAIL(k,col);d+='M'+(p.x-2)+' '+(p.y-2)+'h4v4h-4z'}});
+  sv('path',{d:d,fill:'#4a5568'},B);
+  /* arduino uno */
+  sv('rect',{x:16,y:90,width:300,height:220,rx:10,fill:'url(#laBoard)',stroke:'#044a54','stroke-width':2},B);
+  sv('rect',{x:0,y:118,width:50,height:56,rx:3,fill:'#aeb7c4',stroke:'#5b6575'},B);sv('rect',{x:6,y:126,width:44,height:40,rx:2,fill:'#6c7686'},B);
+  sv('rect',{x:0,y:236,width:46,height:52,rx:4,fill:'#171b22',stroke:'#05070a'},B);sv('circle',{cx:16,cy:262,r:9,fill:'#2b313c'},B);
+  sv('circle',{cx:30,cy:104,r:7,fill:'#ff5a4d',stroke:'#7a1d16'},B);
+  sv('rect',{x:150,y:176,width:104,height:34,rx:3,fill:'#171b22',stroke:'#05070a'},B);tx(B,202,197,'ATMEGA328P',{'font-size':8,fill:'#8a96b3'});
+  sv('rect',{x:108,y:180,width:24,height:11,rx:2,fill:'#c3cad6'},B);sv('circle',{cx:76,cy:250,r:9,fill:'#6c7686',stroke:'#2a2f38'},B);sv('circle',{cx:98,cy:250,r:9,fill:'#6c7686',stroke:'#2a2f38'},B);
+  tx(B,214,256,'ARDUINO',{'font-size':15,'font-weight':900,fill:'#eaf6ff',opacity:.92});tx(B,214,274,'UNO',{'font-size':11,fill:'#eaf6ff',opacity:.85});
+  sv('rect',{x:64,y:92,width:236,height:14,rx:2,fill:'#12161d'},B);sv('rect',{x:100,y:294,width:104,height:14,rx:2,fill:'#12161d'},B);sv('rect',{x:214,y:294,width:92,height:14,rx:2,fill:'#12161d'},B);
+  const lab={AREF:'AREF',GNDt:'GND',D13:'13',D12:'12',D11:'~11',D10:'~10',D9:'~9',D8:'8',D7:'7',D6:'~6',D5:'~5',D4:'4',D3:'~3',D2:'2',D1:'1',D0:'0',IOREF:'IOREF',RESET:'RESET',V3V3:'3V3','3V3':'3V3','5V':'5V',GND:'GND',GND2:'GND',VIN:'VIN',A0:'A0',A1:'A1',A2:'A2',A3:'A3',A4:'A4',A5:'A5'};
+  Object.keys(PINS).forEach(n=>{const p=PINS[n];sv('rect',{x:p.x-3,y:p.y-3,width:6,height:6,fill:'#d6b24a'},B);
+    if(p.y<150)tx(B,p.x+2.5,112,lab[n],{'font-size':6.8,'text-anchor':'end',transform:'rotate(-90 '+(p.x+2.5)+' 112)'});
+    else tx(B,p.x+2.5,291,lab[n],{'font-size':6.8,'text-anchor':'start',transform:'rotate(-90 '+(p.x+2.5)+' 291)'});
+    const key=n==='GNDt'||n==='GND2'?'GND':n==='3V3'?'3.3V':n;
+    const hit=sv('circle',{cx:p.x,cy:p.y,r:7,fill:'#d4ff26','fill-opacity':0,class:'la-pin',style:'pointer-events:all;cursor:help'},B);
+    const say=()=>c.tip((lab[n]||n)+': '+(pinDescriptions[key]||'A connection pin on the board.'));hit.addEventListener('mouseenter',say);hit.addEventListener('click',say)});
+}
+ 
+/* ===== lessons ===== */
+function rangeTrack(c,maxD,car){const P=c.P,W=c.W;
+  sv('rect',{x:352,y:226,width:78,height:38,rx:4,fill:'#1d4fa8',stroke:'#0b0f16'},P);
+  [378,408].forEach(cx=>{sv('circle',{cx:cx,cy:245,r:12,fill:'#b9c2d0',stroke:'#0b0f16'},P);sv('circle',{cx:cx,cy:245,r:7,fill:'#222a38'},P)});
+  tx(P,391,224,'HC-SR04',{'font-size':8,fill:'#cfe0ff'});
+  ['VCC','TRIG','ECHO','GND'].forEach((n,i)=>{sv('rect',{x:361+i*12,y:264,width:4,height:8,fill:'#d6b24a'},P)});
+  wire(W,PINS['5V'],{x:363,y:272},WIRE.pwr,48);wire(W,PINS.D10,{x:375,y:272},WIRE.sig,-45);wire(W,PINS.D9,{x:387,y:272},WIRE.blue,-45);wire(W,PINS.GND,{x:399,y:272},WIRE.gnd,52);
+  const waves=waveArcs(P,438,245,'#d4ff26');const ob=sv('g',{},P),lab=tx(P,520,216,'',{'font-size':11,fill:'#d4ff26','font-weight':700});
+  if(car){sv('rect',{x:0,y:236,width:46,height:18,rx:6,fill:'#155bc9',stroke:'#cfe0ff','stroke-opacity':.5},ob);sv('rect',{x:10,y:228,width:24,height:12,rx:4,fill:'#4f8dff'},ob);sv('circle',{cx:10,cy:256,r:6,fill:'#12161d',stroke:'#d4ff26'},ob);sv('circle',{cx:36,cy:256,r:6,fill:'#12161d',stroke:'#d4ff26'},ob);sv('rect',{x:-2,y:243,width:4,height:6,fill:'#d4ff26'},ob)}
+  else{sv('rect',{x:0,y:224,width:14,height:44,rx:3,fill:'#c9d2e6',stroke:'#7d89a3'},ob)}
+  let cur=maxD/2;
+  return{set(d){cur=d;const x=440+(d/maxD)*(car?120:160);ob.setAttribute('transform','translate('+x+' 0)');lab.setAttribute('x',x+(car?22:6));lab.textContent=Math.round(d)+' cm';return x},
+    waves(t,active){const x=440+(cur/maxD)*(car?120:160);waves.draw(t,Math.max(10,x-440),active)}}}
+ 
+const LESSONS=[
+{t:'Meet the board',s:'Tour the Arduino Uno',
+ ov:`The Arduino Uno is a small computer on a single board. At its heart is the ATmega328P microcontroller, which runs the sketch (program) you upload over USB. Click the dashed parts on the board to learn what each one does, or hover over any pin. Press Run to blink the built-in LED marked L.`,
+ pin:[['D0 - D13','Digital pins: switch LEDs on and off, or read buttons.'],['A0 - A5','Analog inputs: read sensors as a number from 0 to 1023.'],['5V / 3V3','Power for your circuits.'],['GND','Ground, the return path for the current.'],['VIN','Power in from an external supply.']],
+ ex:[`setup() runs once when the board starts.`,`loop() runs again and again, forever.`,`LED_BUILTIN is pin 13, the LED labelled L on the board.`],
+ spec:[['Microcontroller','ATmega328P'],['Operating voltage','5 V'],['Digital I/O pins','14 (6 with PWM)'],['Analog inputs','6'],['Flash memory','32 KB'],['Clock speed','16 MHz']],
+ code:`void setup() {
+  pinMode(LED_BUILTIN, OUTPUT);   // the LED labelled L
+}
+ 
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(1000);
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(1000);
+}`,controls:[],
+ make(c){const P=c.P;const hot=[[0,118,50,56,'USB connector','Connects the board to your computer. It powers the board and uploads your sketch.'],[0,236,46,52,'Power jack','Barrel jack for a 7-12 V external power supply.'],[22,96,16,16,'Reset button','Restarts your sketch from the very beginning.'],[150,174,104,38,'ATmega328P','The microcontroller: the tiny brain that runs your code.'],[64,92,236,14,'Digital pins 0-13','Switch LEDs on and off or read buttons. Pins marked ~ can also do PWM.'],[100,294,104,14,'Power pins','5V, 3.3V and GND power your circuits. VIN is power in.'],[214,294,92,14,'Analog pins A0-A5','Measure the voltage from sensors as a number from 0 to 1023.'],[28,192,24,16,'Built-in LED (L)','Wired to pin 13. The easiest way to see your code run.']];
+  const gl=sv('circle',{cx:40,cy:200,r:18,fill:'#d4ff26',opacity:0,filter:'url(#laBlur)'},P);const Ld=sv('rect',{x:34,y:196,width:12,height:8,rx:2,fill:'#d4ff26',opacity:.3},P);tx(P,40,218,'L',{'font-size':9,fill:'#eaf6ff'});
+  hot.forEach(h=>{const r=sv('rect',{x:h[0],y:h[1],width:h[2],height:h[3],rx:4,class:'la-hot'},P);r.addEventListener('click',()=>c.tip(h[4]+': '+h[5]));r.addEventListener('mouseenter',()=>c.tip(h[4]+': '+h[5]))});
+  const set=v=>{gl.setAttribute('opacity',v?.9:0);Ld.setAttribute('opacity',v?1:.3)};let on=-1;
+  return{idle(){set(0);on=-1},loop(t){const o=Math.floor(t/1000)%2===0?1:0;set(o);if(o!==on){on=o;c.log(o?'LED_BUILTIN HIGH (L is on)':'LED_BUILTIN LOW (L is off)')}}}}},
+ 
+{t:'Blink an LED',s:'Your first circuit',
+ ov:`Your first circuit: an LED and a resistor on a breadboard, driven by pin 13. Setting a pin HIGH puts 5 V on it and the LED lights; LOW switches it off. The resistor limits the current so the LED is not damaged. Press Run and watch the LED blink.`,
+ pin:[['D13','Signal to the resistor and the LED anode (long leg).'],['GND','Return path from the LED cathode (short leg).'],['220 ohm','Current-limiting resistor in series with the LED.']],
+ ex:[`pinMode(13, OUTPUT) makes pin 13 an output.`,`digitalWrite(13, HIGH) puts 5 V on the pin, so the LED lights.`,`delay(500) waits half a second before the next line.`],
+ spec:[['LED forward voltage','about 2 V'],['LED current','about 10 mA'],['Resistor','220 ohm'],['Blink rate','1 time per second']],
+ code:`const int ledPin = 13;
+ 
+void setup() {
+  pinMode(ledPin, OUTPUT);
+}
+ 
+void loop() {
+  digitalWrite(ledPin, HIGH);   // LED on
+  delay(500);
+  digitalWrite(ledPin, LOW);    // LED off
+  delay(500);
+}`,controls:[],
+ make(c){const L=ledCircuit(c,'D13','#ff4d6d');let on=-1;
+  return{idle(){L.set(0);on=-1},loop(t){const o=Math.floor(t/500)%2===0?1:0;L.set(o);if(o!==on){on=o;c.log(o?'LED ON   (pin 13 = HIGH)':'LED OFF  (pin 13 = LOW)')}}}}},
+ 
+{t:'Push a button',s:'Inputs let the board sense',
+ ov:`Inputs let the board sense the world. A push button connects two points when you press it. With INPUT_PULLUP the pin reads HIGH normally and LOW while the button is pressed, so no extra resistor is needed. Hold the button below and watch the LED follow it.`,
+ pin:[['D2','Button input (with the internal pull-up resistor).'],['D13','LED output through a resistor.'],['GND','The other side of the button and the LED.']],
+ ex:[`INPUT_PULLUP keeps the pin HIGH until the button pulls it to GND.`,`digitalRead(2) == LOW therefore means the button is pressed.`,`The sketch only prints when the state changes.`],
+ spec:[['Input mode','INPUT_PULLUP (about 20-50 kohm)'],['Pressed reads','LOW'],['Released reads','HIGH']],
+ code:`const int buttonPin = 2;
+const int ledPin = 13;
+bool wasPressed = false;
+ 
+void setup() {
+  pinMode(buttonPin, INPUT_PULLUP);  // pressed = LOW
+  pinMode(ledPin, OUTPUT);
+  Serial.begin(9600);
+}
+ 
+void loop() {
+  bool pressed = (digitalRead(buttonPin) == LOW);
+  digitalWrite(ledPin, pressed);
+  if (pressed != wasPressed) {
+    Serial.println(pressed ? "Button pressed" : "Button released");
+    wasPressed = pressed;
+  }
+}`,controls:[{t:'hold',k:'btn',l:'Hold to press the button'}],
+ make(c){const L=ledCircuit(c,'D13','#ff4d6d');const B=buttonShape(c.P,534,158);wire(c.W,PINS.D2,BB(12,0),WIRE.blue,-55);wire(c.W,BB(14,0),RAIL('m1',14),WIRE.gnd,-10);let last=-1;
+  return{idle(){L.set(0);B.set(0);last=-1},loop(){const p=c.v.btn?1:0;L.set(p);B.set(p);if(p!==last){last=p;c.log(p?'Button pressed':'Button released')}}}}},
+ 
+{t:'Turn a knob',s:'Analog input and PWM',
+ ov:`A potentiometer is a resistor with a slider. Turning the knob changes the voltage on the middle pin from 0 V to 5 V. analogRead() turns that voltage into a number from 0 to 1023, and analogWrite() uses it to dim an LED with PWM (very fast on and off switching).`,
+ pin:[['A0','Wiper (middle pin) of the potentiometer.'],['5V / GND','The two outer pins of the potentiometer.'],['D9','PWM output to the LED (marked ~).']],
+ ex:[`analogRead() returns 0 - 1023 (10 bits).`,`analogWrite() takes 0 - 255, so we divide by 4.`,`Only pins marked ~ can do PWM.`],
+ spec:[['ADC resolution','10 bit (0 - 1023)'],['PWM resolution','8 bit (0 - 255)'],['PWM frequency','about 490 Hz'],['Potentiometer','10 kohm']],
+ code:`const int potPin = A0;
+const int ledPin = 9;   // a PWM pin
+ 
+void setup() {
+  pinMode(ledPin, OUTPUT);
+  Serial.begin(9600);
+}
+ 
+void loop() {
+  int reading = analogRead(potPin);   // 0 - 1023
+  int brightness = reading / 4;       // 0 - 255
+  analogWrite(ledPin, brightness);
+  Serial.print("Knob: ");
+  Serial.print(reading);
+  Serial.print("  Brightness: ");
+  Serial.println(brightness);
+  delay(300);
+}`,controls:[{t:'range',k:'pot',l:'Turn the knob',min:0,max:1023,val:512}],
+ make(c){const L=ledCircuit(c,'D9','#ff4d6d');const K=potShape(c.P,562,198);wire(c.W,PINS['5V'],BB(14,6),WIRE.pwr,48);wire(c.W,PINS.A0,BB(15,6),WIRE.org,48);wire(c.W,PINS.GND,BB(16,6),WIRE.gnd,52);
+  return{idle(){L.set(0);K.set(.5)},loop(){const r=c.v.pot,f=r/1023;K.set(f);L.set(f);c.every('p',300,()=>c.log('Knob: '+r+'  Brightness: '+Math.floor(r/4)))}}}},
+ 
+{t:'Mix colours',s:'RGB LED and PWM',
+ ov:`An RGB LED is three LEDs (red, green and blue) under one milky lens. Each colour has its own PWM pin, so analogWrite() can dim them separately and mix any colour. Move the three sliders to choose the numbers you would put into setColour().`,
+ pin:[['D11','Red channel (through a resistor).'],['D10','Green channel (through a resistor).'],['D9','Blue channel (through a resistor).'],['GND','Common cathode (longest leg).']],
+ ex:[`setColour(r, g, b) writes three PWM values.`,`255 is full brightness and 0 is off for each colour.`,`Red + green = yellow, red + blue = magenta, all three = white.`],
+ spec:[['LED type','Common cathode RGB'],['Resistors','3 x 220 ohm'],['Colours','256 x 256 x 256']],
+ code:`const int redPin = 11;
+const int greenPin = 10;
+const int bluePin = 9;
+ 
+void setup() {
+  pinMode(redPin, OUTPUT);
+  pinMode(greenPin, OUTPUT);
+  pinMode(bluePin, OUTPUT);
+}
+ 
+void setColour(int r, int g, int b) {
+  analogWrite(redPin, r);
+  analogWrite(greenPin, g);
+  analogWrite(bluePin, b);
+}
+ 
+void loop() {
+  setColour(255, 0, 128);   // try other numbers: 0 - 255
+}`,controls:[{t:'range',k:'r',l:'Red',min:0,max:255,val:255},{t:'range',k:'g',l:'Green',min:0,max:255,val:0},{t:'range',k:'b',l:'Blue',min:0,max:255,val:128}],
+ make(c){const P=c.P,W=c.W;resistor(P,BB(1,1),BB(3,1));resistor(P,BB(7,1),BB(5,1));resistor(P,BB(10,0),BB(6,0));
+  const R=rgbShape(P,(BB(3,3).x+BB(6,3).x)/2,BB(3,3).y);
+  wire(W,PINS.D11,BB(1,2),'#ff6b5a',-55);wire(W,PINS.D10,BB(7,2),'#34d399',-55);wire(W,PINS.D9,BB(10,1),WIRE.blue,-55);wire(W,PINS.GNDt,RAIL('m1',0),WIRE.gnd,-70);wire(W,BB(4,0),RAIL('m1',4),WIRE.gnd,-10);let last='';
+  return{idle(){R.set(0,0,0);last=''},loop(){const r=c.v.r,g=c.v.g,b=c.v.b;R.set(r,g,b);const s='setColour('+r+', '+g+', '+b+')';if(s!==last){last=s;c.log(s)}}}}},
+ 
+{t:'Sense light',s:'A light-dependent resistor',
+ ov:`A light-dependent resistor (LDR) conducts better the more light falls on it. Together with a fixed resistor it forms a voltage divider, so the analog pin reads a bigger number in bright light. The sketch turns on a night lamp when the reading falls below 300. Drag the light slider down to make it dark.`,
+ pin:[['A0','Junction between the LDR and the 10 kohm resistor.'],['5V','Top of the voltage divider.'],['GND','Bottom of the divider, and the lamp LED cathode.'],['D13','Night-lamp LED.']],
+ ex:[`More light = lower LDR resistance = higher voltage on A0.`,`light < 300 means it is dark, so the lamp turns on.`,`Change 300 to make the lamp switch on earlier or later.`],
+ spec:[['LDR in bright light','about 1 kohm'],['LDR in the dark','over 100 kohm'],['Divider resistor','10 kohm']],
+ code:`const int ldrPin = A0;
+const int ledPin = 13;
+ 
+void setup() {
+  pinMode(ledPin, OUTPUT);
+  Serial.begin(9600);
+}
+ 
+void loop() {
+  int light = analogRead(ldrPin);   // more light = bigger number
+  bool dark = light < 300;
+  digitalWrite(ledPin, dark);
+  Serial.print("Light: ");
+  Serial.print(light);
+  Serial.println(dark ? "  night, lamp ON" : "  day, lamp OFF");
+  delay(400);
+}`,controls:[{t:'range',k:'light',l:'Light level',min:0,max:100,val:70,u:'%'}],
+ make(c){const P=c.P,W=c.W;const L=ledCircuit(c,'D13','#ffd166');
+  sv('circle',{cx:520,cy:152,r:12,fill:'#2b3140',stroke:'#0b0f16'},P);sv('path',{d:'M512 146h14l-14 4h14l-14 4h14',fill:'none',stroke:'#d8c9a0','stroke-width':1.6},P);
+  resistor(P,BB(13,3),BB(16,3),['#7a4a1c','#12161d','#e0a030','#c9a227']);
+  wire(W,PINS['5V'],BB(11,4),WIRE.pwr,46);wire(W,PINS.A0,BB(13,4),WIRE.org,46);wire(W,BB(16,0),RAIL('m1',16),WIRE.gnd,-10);
+  const sun=sv('g',{},P);const sx=592,sy=252;sv('circle',{cx:sx,cy:sy,r:11,fill:'#d4ff26'},sun);for(let i=0;i<8;i++){const a=i*Math.PI/4;sv('line',{x1:sx+Math.cos(a)*15,y1:sy+Math.sin(a)*15,x2:sx+Math.cos(a)*22,y2:sy+Math.sin(a)*22,stroke:'#d4ff26','stroke-width':2.4,'stroke-linecap':'round'},sun)}
+  const lt=tx(P,sx,286,'',{'font-size':10,fill:'#3b4a6b','font-weight':700});
+  const set=l=>{sun.setAttribute('opacity',(.12+.88*l/100).toFixed(2));};
+  return{idle(){L.set(0);set(70);lt.textContent=''},loop(){const l=c.v.light;set(l);const rd=Math.round(l*10.23);const dark=rd<300;L.set(dark?1:0);lt.textContent=l+'% light';lt.setAttribute('fill','#cfe0ff');c.every('l',400,()=>c.log('Light: '+rd+(dark?'  night, lamp ON':'  day, lamp OFF')))}}}},
+ 
+{t:'Read a sensor',s:'HC-SR04 ultrasonic distance',
+ ov:`The HC-SR04 sends out a burst of ultrasound and listens for the echo. The time between the burst and the echo tells you the distance, because sound travels about 343 metres per second. Slide the obstacle closer or further away and watch the readings change.`,
+ pin:[['VCC','5 V power.'],['TRIG','Output: a 10 microsecond pulse starts a measurement.'],['ECHO','Input: stays HIGH for as long as the echo takes.'],['GND','Ground.']],
+ ex:[`pulseIn() measures how long ECHO stays HIGH, in microseconds.`,`Multiply by 0.0343 (cm per microsecond) and divide by 2 because the sound goes there and back.`,`The module measures about 2 cm to 400 cm.`],
+ spec:[['Range','2 - 400 cm'],['Accuracy','about 3 mm'],['Frequency','40 kHz'],['Supply','5 V, 15 mA']],
+ code:`const int trigPin = 10;
+const int echoPin = 9;
+ 
+void setup() {
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+  Serial.begin(9600);
+}
+ 
+void loop() {
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin, HIGH);         // 10 us pulse starts a measurement
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+ 
+  long time = pulseIn(echoPin, HIGH);  // echo time in microseconds
+  float cm = time * 0.0343 / 2;        // there and back
+  Serial.print("Distance: ");
+  Serial.print(cm);
+  Serial.println(" cm");
+  delay(400);
+}`,controls:[{t:'range',k:'dist',l:'Obstacle distance',min:2,max:200,val:80,u:' cm'}],
+ make(c){const R=rangeTrack(c,200,false);R.set(80);
+  return{idle(){R.set(80);R.waves(0,false)},loop(t){const d=c.v.dist;R.set(d);R.waves(t,true);c.every('d',400,()=>c.log('Distance: '+d.toFixed(2)+' cm'))}}}},
+ 
+{t:'Make a sound',s:'A piezo buzzer',
+ ov:`A piezo buzzer clicks every time its pin flips from HIGH to LOW. tone() flips the pin very quickly, 440 times a second for the note A, so the clicks blend into a musical tone. Turn the sound on in the toolbar above the code and press Run.`,
+ pin:[['D8','Signal to the buzzer (positive leg).'],['GND','Buzzer negative leg.']],
+ ex:[`tone(pin, 440) plays 440 Hz until noTone(pin).`,`Higher numbers sound higher in pitch.`,`delay() decides how long the tone and the silence last.`],
+ spec:[['Type','Passive piezo buzzer'],['Frequency range','about 100 Hz - 5 kHz'],['Note A4','440 Hz']],
+ code:`const int buzzerPin = 8;
+ 
+void setup() {
+  pinMode(buzzerPin, OUTPUT);
+}
+ 
+void loop() {
+  tone(buzzerPin, 440);   // 440 Hz = the note A
+  delay(500);
+  noTone(buzzerPin);
+  delay(500);
+}`,controls:[],
+ make(c){const P=c.P;sv('circle',{cx:534,cy:158,r:18,fill:'#161a22',stroke:'#0b0f16','stroke-width':2},P);sv('circle',{cx:534,cy:158,r:5,fill:'#05070a'},P);tx(P,522,150,'+',{'font-size':11,fill:'#d4ff26','font-weight':900});
+  [[BB(12,4),-12],[BB(14,4),12]].forEach(a=>sv('line',{x1:534+a[1],y1:172,x2:a[0].x,y2:a[0].y,stroke:'#c9ced8','stroke-width':2},P));
+  wire(c.W,PINS.D8,BB(12,0),WIRE.sig,-55);wire(c.W,PINS.GNDt,RAIL('m1',0),WIRE.gnd,-70);wire(c.W,BB(14,0),RAIL('m1',14),WIRE.gnd,-10);
+  const w=waveArcs(P,534,158,'#d4ff26');let on=-1;
+  return{idle(){w.draw(0,0,false);laTone(0);on=-1},loop(t){const o=Math.floor(t/500)%2===0?1:0;w.draw(t,40,!!o);if(o!==on){on=o;laTone(o?440:0);c.log(o?'tone(8, 440)  beeeep':'noTone(8)     silence')}}}}},
+ 
+{t:'Mini piano',s:'Eight keys and a buzzer',
+ ov:`Eight push buttons and a buzzer make a piano you can play. Each key is a button on its own pin; the sketch checks all eight and plays the matching note. Click the keys below, or use the keyboard letters A S D F G H J K. Turn the sound on in the toolbar to hear the notes.`,
+ pin:[['D9 - D2','The eight key buttons (INPUT_PULLUP).'],['A0','Buzzer signal (an analog pin also works as a digital pin).'],['GND','Common ground for the keys and the buzzer.']],
+ ex:[`Two arrays store the key pins and their note frequencies.`,`A for loop checks every key, so you can play any key.`,`noTone() silences the buzzer when no key is pressed.`],
+ spec:[['Notes','C4 262 Hz up to C5 523 Hz'],['Keys','8 push buttons'],['Mode','One note at a time']],
+ code:`const int keys[8]  = {9, 8, 7, 6, 5, 4, 3, 2};
+const int notes[8] = {262, 294, 330, 349, 392, 440, 494, 523};
+const int buzzerPin = A0;
+ 
+void setup() {
+  for (int i = 0; i < 8; i++) {
+    pinMode(keys[i], INPUT_PULLUP);
+  }
+}
+ 
+void loop() {
+  bool playing = false;
+  for (int i = 0; i < 8; i++) {
+    if (digitalRead(keys[i]) == LOW) {
+      tone(buzzerPin, notes[i]);
+      playing = true;
+    }
+  }
+  if (!playing) noTone(buzzerPin);
+}`,controls:[{t:'piano'}],
+ make(c){const P=c.P,W=c.W,names=['C','D','E','F','G','A','B','C'],fr=[262,294,330,349,392,440,494,523];const btn=[];
+  for(let i=0;i<8;i++){const p=BB(1+i*2,2);btn.push(buttonShape(P,p.x+7,158,22));wire(W,PINS['D'+(9-i)],BB(1+i*2,0),i%2?WIRE.sig:WIRE.blue,-55)}
+  sv('circle',{cx:556,cy:244,r:18,fill:'#161a22',stroke:'#0b0f16','stroke-width':2},P);sv('circle',{cx:556,cy:244,r:5,fill:'#05070a'},P);
+  wire(W,PINS.A0,BB(13,7),WIRE.org,45);wire(W,PINS.GND,BB(15,7),WIRE.gnd,52);wire(W,PINS.GNDt,RAIL('m1',0),WIRE.gnd,-70);
+  const w=waveArcs(P,556,244,'#d4ff26');let cur=-2;
+  return{idle(){btn.forEach(b=>b.set(0));w.draw(0,0,false);laTone(0);cur=-2},loop(t){const k=c.v.key;btn.forEach((b,i)=>b.set(i===k));w.draw(t,36,k>=0);if(k!==cur){cur=k;if(k>=0){laTone(fr[k]);c.log('Key '+(k+1)+' = '+names[k]+'  tone('+fr[k]+' Hz)')}else{laTone(0)}}}}}},
+ 
+{t:'Control a motor',s:'A transistor does the heavy lifting',
+ ov:`A pin cannot power a motor on its own: it can only supply about 20 mA, while a small motor draws far more. A transistor works as a switch that the pin controls, and the motor gets its current from the power supply. A diode across the motor protects the transistor from voltage spikes. PWM on the pin changes the motor speed.`,
+ pin:[['D9','PWM signal to the transistor base (through 1 kohm).'],['Transistor','Collector to the motor, emitter to GND.'],['Diode','Across the motor to absorb spikes.'],['5V','Motor power.']],
+ ex:[`analogWrite(pin, 0..255) sets the average power to the motor.`,`160 / 255 is about 63 percent speed.`,`Never power a motor straight from an Arduino pin.`],
+ spec:[['Transistor','2N2222 or TIP120 (NPN)'],['Base resistor','1 kohm'],['Diode','1N4007'],['Motor','small 3 - 6 V DC motor']],
+ code:`const int motorPin = 9;   // to the transistor base, through 1 kohm
+int speed = 160;          // try 0 - 255
+ 
+void setup() {
+  pinMode(motorPin, OUTPUT);
+  Serial.begin(9600);
+}
+ 
+void loop() {
+  analogWrite(motorPin, speed);   // 0 = stop, 255 = full speed
+  Serial.print("Motor speed: ");
+  Serial.println(speed);
+  delay(500);
+}`,controls:[{t:'range',k:'spd',l:'Motor speed (PWM)',min:0,max:255,val:160}],
+ make(c){const P=c.P,W=c.W;resistor(P,BB(1,0),BB(4,0),['#7a4a1c','#12161d','#c9a227','#c9a227']);
+  sv('path',{d:'M'+(BB(6,2).x-9)+' '+(BB(6,2).y+10)+' V'+(BB(6,2).y-2)+' A9 9 0 0 1 '+(BB(6,2).x+9)+' '+(BB(6,2).y-2)+' V'+(BB(6,2).y+10)+'Z',fill:'#171b22',stroke:'#6c7686'},P);tx(P,BB(6,2).x,BB(6,2).y+3,'2N2222',{'font-size':5.4,fill:'#8a96b3'});
+  sv('rect',{x:446,y:150,width:30,height:9,rx:2,fill:'#171b22',stroke:'#6c7686'},P);sv('rect',{x:466,y:150,width:4,height:9,fill:'#c3cad6'},P);
+  const mx=548,my=170;sv('circle',{cx:mx,cy:my,r:26,fill:'#222a38',stroke:'#6c7686','stroke-width':2},P);
+  const bl=sv('g',{},P);for(let i=0;i<3;i++){sv('ellipse',{cx:mx,cy:my-12,rx:6,ry:11,fill:'#4f8dff',transform:'rotate('+i*120+' '+mx+' '+my+')',opacity:.95},bl)}sv('circle',{cx:mx,cy:my,r:5,fill:'#d4ff26'},P);
+  wire(W,PINS.D9,BB(1,1),WIRE.sig,-55);wire(W,PINS['5V'],BB(15,5),WIRE.pwr,50);wire(W,PINS.GNDt,RAIL('m1',0),WIRE.gnd,-70);wire(W,BB(6,1),RAIL('m1',6),WIRE.gnd,-10);wire(W,BB(8,2),BB(12,3),WIRE.blue,-30);
+  let ang=0;
+  return{idle(){bl.setAttribute('transform','rotate(0 '+mx+' '+my+')')},loop(t,dt){const s=c.v.spd;ang=(ang+s/255*720*dt/1000)%360;bl.setAttribute('transform','rotate('+ang.toFixed(1)+' '+mx+' '+my+')');c.every('m',500,()=>c.log('Motor speed: '+s+'  ('+Math.round(s/255*100)+'%)'))}}}},
+ 
+{t:'Sense heat',s:'The TMP36 temperature sensor',
+ ov:`The TMP36 turns temperature into a voltage: 0.5 V at 0 degrees C, plus 10 mV for every degree. analogRead() turns the voltage into a number, and a little maths turns that back into degrees. Move the temperature slider and read the serial monitor.`,
+ pin:[['Pin 1 (5V)','Power.'],['Pin 2 (A0)','Output voltage, 10 mV per degree C.'],['Pin 3 (GND)','Ground.']],
+ ex:[`volts = reading * 5.0 / 1023.0 converts the number to volts.`,`(volts - 0.5) * 100 converts volts to degrees C.`,`At 25 degrees C the sensor outputs 0.75 V.`],
+ spec:[['Range','-40 to +125 degrees C'],['Scale','10 mV per degree C'],['Offset','0.5 V at 0 degrees C'],['Supply','2.7 - 5.5 V']],
+ code:`const int sensorPin = A0;
+ 
+void setup() {
+  Serial.begin(9600);
+}
+ 
+void loop() {
+  int reading = analogRead(sensorPin);
+  float volts = reading * 5.0 / 1023.0;
+  float celsius = (volts - 0.5) * 100.0;   // 10 mV per degree, 0.5 V at 0 C
+  Serial.print(celsius);
+  Serial.println(" C");
+  delay(500);
+}`,controls:[{t:'range',k:'temp',l:'Temperature',min:-10,max:60,val:24,u:' C'}],
+ make(c){const P=c.P,W=c.W;const x=BB(13,2).x,y=158;
+  sv('path',{d:'M'+(x-14)+' '+(y+12)+' V'+(y-2)+' A14 14 0 0 1 '+(x+14)+' '+(y-2)+' V'+(y+12)+'Z',fill:'#171b22',stroke:'#6c7686','stroke-width':1.4},P);tx(P,x,y+6,'TMP36',{'font-size':6.5,fill:'#8a96b3'});
+  [-10,0,10].forEach(o=>sv('line',{x1:x+o,y1:y+12,x2:BB(12,4).x+(o+10)*0.7,y2:BB(12,4).y,stroke:'#c9ced8','stroke-width':1.6},P));
+  wire(W,PINS['5V'],BB(12,4),WIRE.pwr,46);wire(W,PINS.A0,BB(13,4),WIRE.org,46);wire(W,PINS.GND,BB(14,4),WIRE.gnd,50);
+  const tubeX=600,top=128,bot=250;sv('rect',{x:tubeX-6,y:top,width:12,height:bot-top,rx:6,fill:'#0d1424',stroke:'#cfe0ff','stroke-opacity':.6},P);
+  const hg=sv('rect',{x:tubeX-3.5,y:bot-30,width:7,height:30,rx:3,fill:'#d4ff26'},P);const bulb=sv('circle',{cx:tubeX,cy:bot+8,r:11,fill:'#d4ff26',stroke:'#cfe0ff','stroke-opacity':.6},P);
+  const lab=tx(P,tubeX,bot+30,'',{'font-size':11,'font-weight':700,fill:'#cfe0ff'});
+  const show=T=>{const f=Math.max(0,Math.min(1,(T+10)/70)),h=8+f*(bot-top-12),col=T<15?'#4f8dff':T<32?'#d4ff26':'#ff6b5a';hg.setAttribute('y',bot-h);hg.setAttribute('height',h);hg.setAttribute('fill',col);bulb.setAttribute('fill',col);lab.textContent=T.toFixed(1)+' C'};
+  return{idle(){show(24)},loop(){const T=c.v.temp;show(T);c.every('t',500,()=>{const volts=(T*10+500)/1000,adc=Math.round(volts/5*1023),real=((adc*5/1023)-0.5)*100;c.log(real.toFixed(2)+' C   (ADC '+adc+', '+volts.toFixed(2)+' V)')})}}}},
+ 
+{t:'Sweep a servo',s:'A motor that knows where it is',
+ ov:`A servo is a motor that knows where it is. You tell it an angle from 0 to 180 degrees with servo.write(), and it moves its arm there and holds the position. This sketch sweeps the arm from one end to the other and back again.`,
+ pin:[['D9','Signal wire (orange or yellow).'],['5V','Power (red).'],['GND','Ground (brown or black).']],
+ ex:[`#include <Servo.h> adds the servo library.`,`myServo.attach(9) tells the library which pin to use.`,`write(pos) with a loop and delay(15) makes a smooth sweep.`],
+ spec:[['Angle range','0 - 180 degrees'],['Typical servo','SG90 micro servo'],['Torque','about 1.8 kg-cm'],['Supply','4.8 - 6 V']],
+ code:`#include <Servo.h>
+ 
+Servo myServo;
+ 
+void setup() {
+  myServo.attach(9);
+  Serial.begin(9600);
+}
+ 
+void loop() {
+  for (int pos = 0; pos <= 180; pos++) {
+    myServo.write(pos);
+    if (pos % 30 == 0) Serial.println(pos);
+    delay(15);
+  }
+  for (int pos = 180; pos >= 0; pos--) {
+    myServo.write(pos);
+    delay(15);
+  }
+}`,controls:[{t:'range',k:'sp',l:'Sweep speed (1 = as in the code)',min:1,max:4,val:1,u:'x'}],
+ make(c){const P=c.P,W=c.W;sv('rect',{x:470,y:206,width:70,height:36,rx:4,fill:'#155bc9',stroke:'#0b0f16'},P);sv('rect',{x:458,y:216,width:12,height:16,rx:2,fill:'#155bc9'},P);sv('rect',{x:540,y:216,width:12,height:16,rx:2,fill:'#155bc9'},P);tx(P,505,229,'SERVO',{'font-size':9,fill:'#cfe0ff','font-weight':700});
+  const cx=505,cy=206;sv('circle',{cx:cx,cy:cy,r:9,fill:'#e8eefc',stroke:'#0b0f16'},P);const arm=sv('line',{x1:cx,y1:cy,x2:cx,y2:cy-40,stroke:'#d4ff26','stroke-width':6,'stroke-linecap':'round'},P);sv('circle',{cx:cx,cy:cy,r:3,fill:'#0b0f16'},P);
+  [[{x:470,y:222},WIRE.org,PINS.D9],[{x:470,y:230},WIRE.pwr,PINS['5V']],[{x:470,y:238},WIRE.gnd,PINS.GND]].forEach((w,i)=>wire(W,w[2],w[0],w[1],i===0?-40:46));
+  const lab=tx(P,cx,166,'',{'font-size':12,'font-weight':700,fill:'#d4ff26'});let pos=0,dir=1,lastBand=-1;
+  const draw=a=>{const r=a*Math.PI/180;arm.setAttribute('x2',cx-Math.cos(r)*40);arm.setAttribute('y2',cy-Math.sin(r)*40);lab.textContent=Math.round(a)+' deg'};
+  return{idle(){pos=0;dir=1;draw(90);lab.textContent='';lastBand=-1},loop(t,dt){pos+=dir*66*c.v.sp*dt/1000;if(pos>=180){pos=180;dir=-1}if(pos<=0){pos=0;dir=1}draw(pos);const band=Math.floor(pos/30);if(dir>0&&band!==lastBand){lastBand=band;c.log(String(band*30))}if(dir<0)lastBand=-1}}}},
+ 
+{t:'Spin the wheel',s:'A stepper motor',
+ ov:`A stepper motor turns in exact steps: 2048 of them make one full turn of the 28BYJ-48. A driver board (ULN2003) powers the four coils in order, and the Stepper library does the sequencing. This sketch turns one full turn clockwise, pauses, then turns back.`,
+ pin:[['D8, D10, D9, D11','IN1 - IN4 on the ULN2003 driver board.'],['5V / GND','Power for the driver board.']],
+ ex:[`stepsPerTurn is 2048 for this motor.`,`setSpeed(10) means 10 revolutions per minute.`,`step(-2048) turns the other way.`],
+ spec:[['Motor','28BYJ-48, 5 V'],['Steps per turn','2048'],['Step angle','about 0.176 degrees'],['Max speed','about 15 rpm']],
+ code:`#include <Stepper.h>
+ 
+const int stepsPerTurn = 2048;
+Stepper motor(stepsPerTurn, 8, 10, 9, 11);
+ 
+void setup() {
+  motor.setSpeed(10);          // revolutions per minute
+}
+ 
+void loop() {
+  motor.step(stepsPerTurn);    // one full turn clockwise
+  delay(500);
+  motor.step(-stepsPerTurn);   // and back again
+  delay(500);
+}`,controls:[{t:'range',k:'rpm',l:'Speed',min:1,max:15,val:10,u:' rpm'}],
+ make(c){const P=c.P,W=c.W;const mx=490,my=176;sv('circle',{cx:mx,cy:my,r:42,fill:'#9aa3b5',stroke:'#4a5568','stroke-width':2},P);sv('circle',{cx:mx,cy:my,r:33,fill:'#222a38'},P);
+  const ro=sv('g',{},P);sv('circle',{cx:mx,cy:my,r:20,fill:'#155bc9'},ro);sv('rect',{x:mx-2.5,y:my-18,width:5,height:18,rx:2,fill:'#d4ff26'},ro);sv('circle',{cx:mx,cy:my,r:4,fill:'#0b0f16'},ro);
+  sv('rect',{x:546,y:226,width:76,height:44,rx:4,fill:'#0f7a62',stroke:'#05302a'},P);tx(P,584,244,'ULN2003',{'font-size':8,fill:'#eaf6ff'});
+  [0,1,2,3].forEach(i=>sv('rect',{x:556+i*14,y:226,width:5,height:7,fill:'#d6b24a'},P));
+  [['D8',0],['D10',1],['D9',2],['D11',3]].forEach((p,i)=>wire(W,PINS[p[0]],{x:558.5+i*14,y:228},[WIRE.sig,WIRE.blue,WIRE.org,WIRE.wht][i],-45));wire(W,PINS['5V'],{x:604,y:270},WIRE.pwr,40);wire(W,PINS.GND,{x:612,y:270},WIRE.gnd,52);
+  const lab=tx(P,mx,238,'',{'font-size':11,'font-weight':700,fill:'#d4ff26'});let steps=0,dir=1,pause=0,ang=0;
+  const draw=()=>{ro.setAttribute('transform','rotate('+ang.toFixed(1)+' '+mx+' '+my+')')};
+  return{idle(){steps=0;dir=1;pause=0;ang=0;draw();lab.textContent=''},loop(t,dt){if(pause>0){pause-=dt;return}const rate=c.v.rpm*2048/60;steps+=dir*rate*dt/1000;
+    if(dir>0&&steps>=2048){steps=2048;dir=-1;pause=500;c.log('One full turn clockwise: 2048 steps')}else if(dir<0&&steps<=0){steps=0;dir=1;pause=500;c.log('Back to the start: 0 steps')}
+    ang=steps/2048*360;draw();lab.textContent=Math.round(steps)+' steps';c.every('st',700,()=>c.log('Step '+Math.round(steps)+' of 2048'))}}}},
+ 
+{t:'Smart plant',s:'Soil moisture and a screen',
+ ov:`A capacitive sensor in the soil says how wet it is, and a little OLED screen turns that into a percentage and a mood. Dry soil gives a high reading and wet soil a low one, so map() flips the numbers into 0 - 100 percent. The screen needs a display library, which is left out of the sketch here to keep it short. Move the moisture slider to water the plant.`,
+ pin:[['A0','Soil sensor output.'],['SDA (A4)','OLED data line.'],['SCL (A5)','OLED clock line.'],['5V / GND','Power for the sensor and the screen.']],
+ ex:[`map(raw, 620, 310, 0, 100) turns a reading into a percentage.`,`constrain() keeps the answer between 0 and 100.`,`Below 30 percent the plant is thirsty.`],
+ spec:[['Sensor','Capacitive soil moisture v1.2'],['Dry reading','about 620'],['Wet reading','about 310'],['Screen','0.96 inch 128x64 OLED (I2C)']],
+ code:`const int soilPin = A0;
+ 
+void setup() {
+  Serial.begin(9600);
+}
+ 
+void loop() {
+  int raw = analogRead(soilPin);               // dry = high, wet = low
+  int percent = map(raw, 620, 310, 0, 100);    // turn it into 0 - 100 %
+  percent = constrain(percent, 0, 100);
+  Serial.print("Moisture: ");
+  Serial.print(percent);
+  Serial.println(percent < 30 ? " %  thirsty" : " %  happy");
+  delay(500);
+}`,controls:[{t:'range',k:'moist',l:'Soil moisture',min:0,max:100,val:45,u:'%'}],
+ make(c){const P=c.P,W=c.W;sv('rect',{x:352,y:262,width:70,height:26,rx:4,fill:'#5b3a22'},P);sv('rect',{x:374,y:214,width:20,height:66,rx:2,fill:'#0f7a62',stroke:'#05302a'},P);sv('rect',{x:380,y:224,width:8,height:40,fill:'#d6b24a',opacity:.8},P);
+  sv('path',{d:'M412 262c-2-16 4-26 14-30',stroke:'#34d399','stroke-width':3,fill:'none','stroke-linecap':'round'},P);sv('ellipse',{cx:428,cy:230,rx:8,ry:4,fill:'#34d399',transform:'rotate(-30 428 230)'},P);
+  sv('rect',{x:476,y:122,width:130,height:74,rx:6,fill:'#0b0f16',stroke:'#4a5568','stroke-width':2},P);const o1=tx(P,490,142,'',{'font-size':12,'font-weight':900,fill:'#d4ff26','text-anchor':'start'}),bar=sv('rect',{x:490,y:150,width:0,height:8,fill:'#4f8dff'},P);sv('rect',{x:490,y:150,width:100,height:8,fill:'none',stroke:'#4f8dff','stroke-opacity':.6},P);
+  const o3=tx(P,490,182,'',{'font-size':12,fill:'#e8eefc','text-anchor':'start'});
+  wire(W,PINS.A0,{x:384,y:216},WIRE.org,45);wire(W,PINS['5V'],{x:378,y:216},WIRE.pwr,46);wire(W,PINS.GND,{x:390,y:216},WIRE.gnd,50);wire(W,PINS.A4,{x:540,y:196},WIRE.blue,40);wire(W,PINS.A5,{x:556,y:196},WIRE.sig,40);
+  const show=m=>{const mood=m<30?'Thirsty  :(':m<70?'Happy  :)':'Well watered  :D';o1.textContent='SOIL '+m+'%';bar.setAttribute('width',m);o3.textContent=mood;return m<30};
+  return{idle(){o1.textContent='SOIL --';bar.setAttribute('width',0);o3.textContent='Press Run'},loop(){const m=c.v.moist;const th=show(m);c.every('s',500,()=>c.log('Moisture: '+m+' %  '+(m<30?'thirsty':'happy')))}}}},
+ 
+{t:'Feel the force',s:'A force-sensing resistor',
+ ov:`A force-sensing resistor (FSR) is a thin pad whose resistance falls from millions of ohms to a few hundred as you press it. In a voltage divider the analog reading rises with the force, and here it controls the brightness of an LED. Slide the force up to press harder.`,
+ pin:[['A0','Junction between the FSR and the 10 kohm resistor.'],['5V','FSR supply.'],['D9','PWM output to the LED.'],['GND','Divider resistor and LED return.']],
+ ex:[`analogRead() gives a bigger number for a harder press.`,`map() converts 0 - 1023 into 0 - 255 for analogWrite().`,`FSRs show how hard you press, not an exact weight.`],
+ spec:[['Resistance, no force','over 1 Mohm'],['Resistance, hard press','about 200 ohm'],['Divider resistor','10 kohm'],['Pad size','about 14 mm']],
+ code:`const int fsrPin = A0;
+const int ledPin = 9;
+ 
+void setup() {
+  pinMode(ledPin, OUTPUT);
+  Serial.begin(9600);
+}
+ 
+void loop() {
+  int force = analogRead(fsrPin);               // harder press = bigger number
+  int brightness = map(force, 0, 1023, 0, 255);
+  analogWrite(ledPin, brightness);
+  Serial.print("Force: ");
+  Serial.println(force);
+  delay(200);
+}`,controls:[{t:'range',k:'force',l:'Pressing force',min:0,max:100,val:0,u:'%'}],
+ make(c){const P=c.P,W=c.W;const L=ledCircuit(c,'D9','#ff4d6d');const px=548,py=176;sv('rect',{x:px-8,y:py+8,width:16,height:46,fill:'#2b3140'},P);sv('circle',{cx:px,cy:py,r:24,fill:'#171b22',stroke:'#d4ff26','stroke-width':2.4},P);sv('circle',{cx:px,cy:py,r:14,fill:'none',stroke:'#4f8dff','stroke-width':2},P);
+  const fg=sv('g',{},P);sv('ellipse',{cx:px,cy:py-30,rx:16,ry:20,fill:'#e0b79a',opacity:.92},fg);
+  wire(W,PINS['5V'],BB(15,5),WIRE.pwr,50);wire(W,PINS.A0,BB(16,5),WIRE.org,48);wire(W,PINS.GND,BB(17,5),WIRE.gnd,52);
+  const move=f=>fg.setAttribute('transform','translate(0 '+(f/100*26)+')');
+  return{idle(){L.set(0);move(0)},loop(){const f=c.v.force,rd=Math.round(f*10.23);move(f);L.set(rd/1023);c.every('f',250,()=>c.log('Force: '+rd+'   LED brightness '+Math.round(rd/4)))}}}},
+ 
+{t:'Build a project',s:'A distance-sensing traffic light',
+ ov:`Put it all together: the distance sensor watches the obstacle and a traffic light tells the driver when to stop. Closer than 20 cm the light turns red, between 20 and 50 cm it is yellow, and further away it is green. Drag the car towards the sensor and watch the lights change.`,
+ pin:[['D10 / D9','TRIG and ECHO of the HC-SR04.'],['D3','Red LED.'],['D4','Yellow LED.'],['D5','Green LED.'],['5V / GND','Power and ground.']],
+ ex:[`readDistance() wraps the ultrasonic code into one function.`,`The three if-style tests decide which light is on.`,`Try other distances, or add a buzzer on a spare pin.`],
+ spec:[['Red','closer than 20 cm'],['Yellow','20 - 50 cm'],['Green','50 cm or more'],['Parts','HC-SR04, 3 LEDs, 3 x 220 ohm']],
+ code:`const int trigPin = 10;
+const int echoPin = 9;
+const int redPin = 3;
+const int yellowPin = 4;
+const int greenPin = 5;
+ 
+void setup() {
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+  pinMode(redPin, OUTPUT);
+  pinMode(yellowPin, OUTPUT);
+  pinMode(greenPin, OUTPUT);
+  Serial.begin(9600);
+}
+ 
+float readDistance() {
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+  return pulseIn(echoPin, HIGH) * 0.0343 / 2;
+}
+ 
+void loop() {
+  float cm = readDistance();
+  digitalWrite(redPin, cm < 20);
+  digitalWrite(yellowPin, cm >= 20 && cm < 50);
+  digitalWrite(greenPin, cm >= 50);
+  Serial.print(cm);
+  Serial.println(" cm");
+  delay(200);
+}`,controls:[{t:'range',k:'dist',l:'Car distance from the sensor',min:5,max:100,val:70,u:' cm'}],
+ make(c){const P=c.P,W=c.W;const R=rangeTrack(c,100,true);R.set(70);
+  sv('rect',{x:536,y:120,width:56,height:88,rx:9,fill:'#10151f',stroke:'#4a5568','stroke-width':2},P);
+  const lamps=[['#ff3b4e',144],['#ffd166',164],['#34d399',184]].map(l=>{const g=sv('circle',{cx:564,cy:l[1],r:19,fill:l[0],opacity:0,filter:'url(#laBlur)'},P);const d=sv('circle',{cx:564,cy:l[1],r:8,fill:l[0],opacity:.22,stroke:'#fff','stroke-opacity':.3},P);return{set(v){g.setAttribute('opacity',v?.9:0);d.setAttribute('opacity',v?1:.22)}}});
+  wire(W,PINS.D3,{x:536,y:144},'#ff6b5a',-50);wire(W,PINS.D4,{x:536,y:164},WIRE.org,-50);wire(W,PINS.D5,{x:536,y:184},'#34d399',-50);wire(W,PINS.GNDt,{x:564,y:208},WIRE.gnd,-65);
+  const lab=tx(P,564,226,'',{'font-size':10,'font-weight':900,fill:'#d4ff26'});
+  const show=d=>{lamps[0].set(d<20);lamps[1].set(d>=20&&d<50);lamps[2].set(d>=50);lab.textContent=d<20?'STOP':d<50?'SLOW':'GO'};
+  return{idle(){R.set(70);R.waves(0,false);lamps.forEach(l=>l.set(0));lab.textContent=''},loop(t){const d=c.v.dist;R.set(d);R.waves(t,true);show(d);c.every('p',300,()=>c.log(d.toFixed(2)+' cm   '+(d<20?'RED: stop':d<50?'YELLOW: slow down':'GREEN: go')))}}}}
+];
+ 
+/* ===== sound (a tone follows the buzzer; starts after the Run click) ===== */
+function laTone(f){try{if(!LA.sound)f=0;if(f>0){if(!LA.ac)LA.ac=new(window.AudioContext||window.webkitAudioContext)();if(LA.ac.state==='suspended')LA.ac.resume();
+  if(!LA.osc){LA.osc=LA.ac.createOscillator();LA.gain=LA.ac.createGain();LA.osc.type='square';LA.gain.gain.value=.04;LA.osc.connect(LA.gain);LA.gain.connect(LA.ac.destination);LA.osc.start()}LA.osc.frequency.setValueAtTime(f,LA.ac.currentTime)}
+  else if(LA.osc){LA.osc.stop();LA.osc.disconnect();LA.gain.disconnect();LA.osc=null}}catch(e){}}
+ 
+/* ===== UI ===== */
+function laHL(code){const kw='void|int|long|float|bool|const|if|else|for|while|return|true|false|Servo|Stepper';const fn='pinMode|digitalWrite|digitalRead|analogRead|analogWrite|delay|delayMicroseconds|pulseIn|tone|noTone|map|constrain|attach|write|setSpeed|step|begin|print|println|setup|loop|setColour|readDistance';
+  const re=new RegExp('(//.*)|(#include.*)|("[^"]*")|\\b('+kw+')\\b|\\b('+fn+')\\b|\\b(\\d+\\.?\\d*)\\b|\\b(HIGH|LOW|OUTPUT|INPUT_PULLUP|INPUT|LED_BUILTIN|A\\d)\\b','g');
+  return escapeHTML(code).replace(/&quot;/g,'"').replace(re,(m,c1,c2,s,k,f,n,cn)=>c1?'<span class="c">'+c1+'</span>':c2?'<span class="k">'+c2+'</span>':s?'<span class="s">'+s+'</span>':k?'<span class="k">'+k+'</span>':f?'<span class="f">'+f+'</span>':n?'<span class="n">'+n+'</span>':'<span class="n">'+cn+'</span>')}
+function laTip(t){const e=$('laTip');if(e)e.textContent=t}
+function laLog(line){const box=$('laLines');const d=document.createElement('div');d.textContent=line;box.appendChild(d);while(box.children.length>80)box.removeChild(box.firstChild);box.scrollTop=box.scrollHeight}
+function laEvery(k,ms,fn){const t=LA.curT;if(LA.ev[k]==null||t-LA.ev[k]>=ms){LA.ev[k]=t;fn()}}
+function laApply(){const s=$('laScene');if(s)s.style.transform='scale('+(LA.fit*LA.zoom).toFixed(3)+') rotateX('+LA.rx+'deg) rotateZ('+LA.rz+'deg)'}
+function laFit(){const st=$('laStage');if(!st)return;const w=st.clientWidth;if(w<60)return;LA.fit=Math.min(1,(w-12)/720);st.style.height=Math.round(400*LA.fit*.92+56)+'px';laApply()}
+function laSaveDone(){try{localStorage.setItem(LA_DONE_KEY,JSON.stringify(LA.done))}catch(e){}}
+function laProgress(){const n=LA.done.length;$('laProgText').textContent=n+'/'+LESSONS.length+' lessons tried';$('laProgBar').style.width=(n/LESSONS.length*100)+'%';document.querySelectorAll('.la-item').forEach((b,i)=>{b.classList.toggle('done',LA.done.includes(i));b.classList.toggle('active',i===LA.idx)})}
+function laInfo(){const L=LESSONS[LA.idx];const box=$('laInfo');let h='';
+  if(LA.tab===0)h='<p>'+escapeHTML(L.ov)+'</p>';
+  else if(LA.tab===1)h='<table class="la-table">'+L.pin.map(r=>'<tr><td><strong>'+escapeHTML(r[0])+'</strong></td><td>'+escapeHTML(r[1])+'</td></tr>').join('')+'</table>';
+  else if(LA.tab===2)h='<ul class="la-ex">'+L.ex.map(x=>'<li>'+escapeHTML(x)+'</li>').join('')+'</ul>';
+  else h='<table class="la-table">'+L.spec.map(r=>'<tr><td><strong>'+escapeHTML(r[0])+'</strong></td><td>'+escapeHTML(r[1])+'</td></tr>').join('')+'</table>';
+  box.innerHTML=h;document.querySelectorAll('.la-tab').forEach((b,i)=>b.classList.toggle('active',i===LA.tab))}
+function laKey(i,down){if(down){LA.v.key=i}else if(LA.v.key===i){LA.v.key=-1}document.querySelectorAll('.la-key').forEach((b,j)=>b.classList.toggle('on',LA.v.key===j));if(down)laRun()}
+function laControls(L){const box=$('laControls');box.innerHTML='';(L.controls||[]).forEach(ct=>{
+  if(ct.t==='range'){LA.v[ct.k]=ct.val;const w=document.createElement('label');w.className='la-ctl';w.innerHTML=escapeHTML(ct.l)+' <b>'+ct.val+(ct.u||'')+'</b><input type="range" min="'+ct.min+'" max="'+ct.max+'" value="'+ct.val+'" step="'+(ct.step||1)+'">';
+    const inp=w.querySelector('input'),b=w.querySelector('b');inp.oninput=()=>{LA.v[ct.k]=+inp.value;b.textContent=inp.value+(ct.u||'');laRun()};box.appendChild(w)}
+  else if(ct.t==='hold'){LA.v[ct.k]=0;const b=document.createElement('button');b.type='button';b.className='la-hold';b.textContent=ct.l;
+    b.addEventListener('pointerdown',e=>{e.preventDefault();LA.v[ct.k]=1;b.classList.add('on');laRun()});['pointerup','pointerleave','pointercancel'].forEach(ev=>b.addEventListener(ev,()=>{LA.v[ct.k]=0;b.classList.remove('on')}));box.appendChild(b)}
+  else if(ct.t==='piano'){LA.v.key=-1;const row=document.createElement('div');row.className='la-piano';const nm=['C','D','E','F','G','A','B','C'],kb=['A','S','D','F','G','H','J','K'];
+    nm.forEach((n,i)=>{const b=document.createElement('button');b.type='button';b.className='la-key';b.innerHTML='<strong>'+n+'</strong><span>'+kb[i]+'</span>';b.addEventListener('pointerdown',e=>{e.preventDefault();laKey(i,true)});['pointerup','pointerleave','pointercancel'].forEach(ev=>b.addEventListener(ev,()=>laKey(i,false)));row.appendChild(b)});box.appendChild(row)}})}
+function laSelect(i){laStop();LA.idx=i;const L=LESSONS[i];LA.v={};
+  const B=$('laBase'),P=$('laParts'),W=$('laWires');P.innerHTML='';W.innerHTML='';
+  const ctx={P:P,W:W,v:LA.v,log:laLog,tip:laTip,every:laEvery};laDrawBase(B,ctx);laControls(L);
+  LA.sim=L.make(ctx);LA.sim.idle();
+  $('laTitle').textContent=(i+1)+'. '+L.t;$('laSub').textContent=L.s;$('laCode').innerHTML=laHL(L.code);$('laLines').innerHTML='';
+  laLog('Ready. Press Run to start the sketch.');laTip('Hover over a pin on the board to see what it does.');
+  LA.tab=0;laInfo();laProgress();$('laPrev').disabled=i===0;$('laNext').disabled=i===LESSONS.length-1}
+function laRun(){if(LA.running)return;LA.running=true;LA.ev={};LA.t0=performance.now();LA.last=LA.t0;LA.curT=0;$('laRunBtn').textContent='Stop';$('laRunBtn').classList.add('running');$('laStatus').textContent='Running';
+  if(!LA.done.includes(LA.idx)){LA.done.push(LA.idx);laSaveDone();laProgress()}LA.timer=setInterval(laTick,40)}
+function laTick(){const now=performance.now(),t=now-LA.t0,dt=now-LA.last;LA.last=now;LA.curT=t;try{LA.sim.loop(t,dt)}catch(e){console.error(e)}}
+function laStop(){if(LA.timer){clearInterval(LA.timer);LA.timer=null}if(!LA.running)return;LA.running=false;laTone(0);if(LA.sim&&LA.sim.idle)LA.sim.idle();
+  const b=$('laRunBtn');if(b){b.textContent='Run';b.classList.remove('running')}const s=$('laStatus');if(s)s.textContent='Stopped'}
+function initLearn(){if(LA.built){laFit();return}LA.built=true;buildLearn()}
+function buildLearn(){
+  try{LA.done=JSON.parse(localStorage.getItem(LA_DONE_KEY)||'[]')}catch(e){LA.done=[]}
+  const list=$('laList');LESSONS.forEach((L,i)=>{const li=document.createElement('li'),b=document.createElement('button');b.type='button';b.className='la-item';
+    b.innerHTML='<span class="la-num">'+(i+1)+'</span><span><strong>'+escapeHTML(L.t)+'</strong><br><span class="small muted">'+escapeHTML(L.s)+'</span></span>';b.onclick=()=>{laSelect(i);$('laStage').scrollIntoView({behavior:'smooth',block:'nearest'})};li.appendChild(b);list.appendChild(li)});
+  document.querySelectorAll('.la-tab').forEach((b,i)=>b.onclick=()=>{LA.tab=i;laInfo()});
+  $('laRunBtn').onclick=()=>{if(LA.running)laStop();else laRun()};
+  $('laPrev').onclick=()=>laSelect(Math.max(0,LA.idx-1));$('laNext').onclick=()=>laSelect(Math.min(LESSONS.length-1,LA.idx+1));
+  $('laCopy').onclick=async()=>{const code=LESSONS[LA.idx].code;try{await navigator.clipboard.writeText(code)}catch(e){const t=document.createElement('textarea');t.value=code;document.body.appendChild(t);t.select();try{document.execCommand('copy')}catch(e2){}t.remove()}$('laCopy').textContent='Copied';setTimeout(()=>$('laCopy').textContent='Copy code',1400)};
+  $('laSound').onclick=()=>{LA.sound=!LA.sound;$('laSound').textContent=LA.sound?'Sound on':'Sound off';$('laSound').classList.toggle('off',!LA.sound);if(!LA.sound)laTone(0)};
+  $('laRotL').onclick=()=>{LA.rz-=18;laApply()};$('laRotR').onclick=()=>{LA.rz+=18;laApply()};$('laIn').onclick=()=>{LA.zoom=Math.min(1.8,LA.zoom*1.15);laApply()};$('laOut').onclick=()=>{LA.zoom=Math.max(.6,LA.zoom/1.15);laApply()};
+  $('laTilt').onclick=()=>{LA.rx=LA.rx>20?0:50;laApply()};$('laReset').onclick=()=>{LA.rx=50;LA.rz=-8;LA.zoom=1;laApply()};
+  const st=$('laStage');let drag=null;
+  st.addEventListener('pointerdown',e=>{drag={x:e.clientX,y:e.clientY,rx:LA.rx,rz:LA.rz,moved:false}});
+  window.addEventListener('pointermove',e=>{if(!drag)return;const dx=e.clientX-drag.x,dy=e.clientY-drag.y;if(!drag.moved&&Math.hypot(dx,dy)<5)return;drag.moved=true;st.classList.add('drag');LA.rz=drag.rz+dx*.4;LA.rx=Math.max(0,Math.min(75,drag.rx-dy*.3));laApply()});
+  window.addEventListener('pointerup',()=>{drag=null;st.classList.remove('drag')});
+  st.addEventListener('wheel',e=>{e.preventDefault();LA.zoom=Math.max(.6,Math.min(1.8,LA.zoom*(e.deltaY<0?1.08:.93)));laApply()},{passive:false});
+  const kmap={a:0,s:1,d:2,f:3,g:4,h:5,j:6,k:7};
+  const kact=e=>!$('learn').classList.contains('hidden')&&LESSONS[LA.idx].controls.some(c=>c.t==='piano')&&!/INPUT|TEXTAREA|SELECT/.test((e.target||{}).tagName||'');
+  window.addEventListener('keydown',e=>{if(e.repeat||!kact(e))return;const k=kmap[e.key.toLowerCase()];if(k!=null)laKey(k,true)});
+  window.addEventListener('keyup',e=>{if(!kact(e))return;const k=kmap[e.key.toLowerCase()];if(k!=null)laKey(k,false)});
+  window.addEventListener('resize',laFit);
+  laSelect(0);laFit();
+}
+ 
 /* ===== Init ===== */
 setQuiz(quiz);updateProfileGreeting();renderAssignment();showTab('info');renderAttendance();setInterval(renderAttendance,1000);handleAttendanceScan();
 </script>
 </body></html>
-
